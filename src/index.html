@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拱墅区发展中心建设工程综合监管平台</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- css库文件 -->
+    <link rel="stylesheet" href="../node_modules/_font-awesome@4.7.0@font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/_angular-toastr@1.5.0@angular-toastr/dist/angular-toastr.min.css">
+
+    <link href="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.css" rel="stylesheet">
+
+
+
+    <!-- css引入 -->
+    <!-- build:css dist_css/style.css -->
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <link rel="stylesheet" href="./lib/css/ngDialog.css">
+    <link rel="stylesheet" href="./lib/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- endbuild -->
+    <!-- js库文件 -->
+    <script src="https://cdn.bootcss.com/angular.js/1.6.0/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular.js/1.6.0/angular-animate.min.js"></script>
+
+    <script src="../node_modules/_angular-toastr@1.5.0@angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/angular-ui-router/0.4.3/angular-ui-router.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular-ui-bootstrap/1.3.2/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://cdn.bootcss.com/angular-local-storage/0.7.1/angular-local-storage.min.js"></script>
+    <script src="https://cdn.bootcss.com/ng-dialog/1.4.0/js/ngDialog.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/danialfarid-angular-file-upload/12.2.10/ng-file-upload-shim.min.js"></script>
+    <script src="https://cdn.bootcss.com/danialfarid-angular-file-upload/12.2.10/ng-file-upload.min.js"></script>
+    <script src="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe.js"></script>
+    <script src="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe-ui-default.js"></script>
+
+
+    <!-- build:js dist_js/bundle.js -->
+
+    <!-- 汉化 -->
+    <script src="./lib/js/angular-locale_zh.js"></script>
+    <!-- 项目启动 -->
+    <script src="./js/config/start.js"></script>
+    <script src="./js/config/config.js"></script>
+    <script src="./js/config/run.js"></script>
+    <!-- 路由引入 -->
+    <script src="./js/route/route.js"></script>
+    <!-- 指令引入 -->
+    <script src="./js/directive/autoFocus.js"></script>
+    <!-- 服务引入 -->
+    <script src="./js/service/$utilFactory.js"></script>
+    <script src="./js/service/Constant.js"></script>
+    <script src="./js/service/Http.js"></script>
+    <script src="./js/service/$httpFactory.js"></script>
+    <script src="./js/service/$handleHttp.js"></script>
+    <script src="./js/service/$areYouSureFactory.js"></script>
+    <script src="./js/service/$loadingFactory.js"></script>
+    <script src="./js/service/$photoSwipeFactory.js"></script>
+    <script src="./js/service/Permission.js"></script>
+    <script src="./js/service/MenuList.js"></script>
+    <!-- 控制器引入 -->
+    <script src="./view/login/loginCtrl.js"></script>
+    <script src="./view/main/mainCtrl.js"></script>
+    <script src="./view/setting/settingCtrl.js"></script>
+    <script src="./view/setting/first/firstCtrl.js"></script>
+    <script src="./view/setting/first/bindProjectCtrl.js"></script>
+    <script src="./view/setting/second/secondCtrl.js"></script>
+    <script src="./view/setting/third/thirdCtrl.js"></script>
+    <script src="./view/list/listCtrl.js"></script>
+    <script src="./view/detail/detailCtrl.js"></script>
+    <script src="./view/detailFirst/detailFirstCtrl.js"></script>
+    <script src="./view/detailSecond/detailSecondCtrl.js"></script>
+    <script src="./view/detailSecond/first/firstCtrl.js"></script>
+    <script src="./view/detailSecond/second/secondCtrl.js"></script>
+    <script src="./view/detailSecond/third/thirdCtrl.js"></script>
+    <script src="./view/detailSecond/fourth/fourthCtrl.js"></script>
+    <script src="./view/detailSecond/fifth/fifthCtrl.js"></script>
+    <script src="./view/detailSecond/sixth/sixthCtrl.js"></script>
+    <script src="./view/detailThird/detailThirdCtrl.js"></script>
+    <script src="./view/detailThird/first/firstCtrl.js"></script>
+    <script src="./view/detailThird/second/secondCtrl.js"></script>
+    <script src="./view/detailThird/third/thirdCtrl.js"></script>
+    <script src="./view/detailThird/third/first/firstCtrl.js"></script>
+    <script src="./view/detailThird/third/second/secondCtrl.js"></script>
+    <script src="./view/detailThird/third/third/thirdCtrl.js"></script>
+    <script src="./view/detailThird/third/fourth/fourthCtrl.js"></script>
+    <script src="./view/detailFourth/detailFourthCtrl.js"></script>
+    <script src="./view/detailFourth/first/firstCtrl.js"></script>
+    <script src="./view/detailFourth/second/secondCtrl.js"></script>
+    <script src="./view/detailFourth/third/thirdCtrl.js"></script>
+
+    <!-- <script src="./js/template/templates.js"></script> -->
+
+    <!-- endbuild -->
+
+</head>
+
+<body ng-app="app">
+    <!-- 低版本浏览器提醒 -->
+    <!--[if lt IE 10]>
+      <p class="browsehappy">您使用的浏览器需要升级. 请<a href="http://browsehappy.com/" target="_blank">更新您的浏览器</a></p>
+    <![endif]-->
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div ui-view class="first-view">
+
+    </div>
+</body>
+
+</html>
