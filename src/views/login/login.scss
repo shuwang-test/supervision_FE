@@ -1,0 +1,60 @@
+$title-padding-left: 50px;
+div.login-container {
+	background-image: url('../assets/images/bg.jpg');
+	background-size: cover;
+	position: relative;
+	> div.title {
+		height: 8%;
+		position: relative;
+		background-color: #219cea;
+		> div {
+			@include vertical;
+			padding-left: $title-padding-left;
+			font-size: 25px;
+			color: #fff;
+		}
+	}
+	> div.content {
+		@include horizontal-vertical;
+		background-color: rgba(171, 179, 181, 0.6);
+		padding: 30px 70px;
+		border-radius: 10px;
+		> div {
+			margin-bottom: 20px;
+			position: relative;
+			&.button {
+				width: 320px;
+				margin-bottom: 0;
+				padding: 10px 0;
+				text-align: center;
+				background-color: #219cea;
+				color: #fff;
+				font-size: 18px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			> input {
+				width: 320px;
+				height: 40px;
+				line-height: 40px;
+				padding: 0 40px 0 20px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+				box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				&:focus {
+					outline: 0;
+					border-color: #66afe9;
+					box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+						0 0 8px rgba(102, 175, 233, 0.6);
+				}
+			}
+			> span.fa {
+				@include vertical;
+				vertical-align: middle;
+				right: 15px;
+				color: #219cea;
+				font-size: 30px;
+			}
+		}
+	}
+}

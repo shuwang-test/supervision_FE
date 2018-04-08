@@ -7,97 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>拱墅区发展中心建设工程综合监管平台</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-
-    <!-- css库文件 -->
-    <link rel="stylesheet" href="../node_modules/_font-awesome@4.7.0@font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../node_modules/_angular-toastr@1.5.0@angular-toastr/dist/angular-toastr.min.css">
-
-    <link href="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe.css" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.css" rel="stylesheet">
-
-
-
-    <!-- css引入 -->
-    <!-- build:css dist_css/style.css -->
-    <link rel="stylesheet" href="./lib/css/bootstrap.css">
-    <link rel="stylesheet" href="./lib/css/ngDialog.css">
-    <link rel="stylesheet" href="./lib/css/ngDialog-theme-default.css">
+    <!-- 引入css库文件 -->
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./lib/css/ngDialog.min.css">
+    <link rel="stylesheet" href="./lib/css/ngDialog-theme-default.min.css">
+    <link rel="stylesheet" href="./lib/css/angular-toastr.min.css">
+    <link rel="stylesheet" href="./lib/css/photoswipe.css">
+    <link rel="stylesheet" href="./lib/css/default-skin.css">
+    <!-- 引入自定义css -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- endbuild -->
-    <!-- js库文件 -->
-    <script src="https://cdn.bootcss.com/angular.js/1.6.0/angular.min.js"></script>
-    <script src="https://cdn.bootcss.com/angular.js/1.6.0/angular-animate.min.js"></script>
+    <!-- 引入js库文件 -->
+    <script src="./lib/js/angular.min.js"></script>
+    <script src="./lib/js/angular-animate.min.js"></script>
+    <script src="./lib/js/angular-ui-router.min.js"></script>
+    <script src="./lib/js/ui-bootstrap-tpls.js"></script>
+    <script src="./lib/js/ngDialog.min.js"></script>
+    <script src="./lib/js/angular-toastr.tpls.min.js"></script>
+    <script src="./lib/js/angular-local-storage.min.js"></script>
+    <script src="./lib/js/ng-file-upload.min.js"></script>
+    <script src="./lib/js/ng-file-upload-shim.min.js"></script>
 
-    <script src="../node_modules/_angular-toastr@1.5.0@angular-toastr/dist/angular-toastr.tpls.min.js"></script>
+    <script src="./js/module/app.module.js"></script>
+    <script src="./js/config/localStorage.config.js"></script>
+    <script src="./js/config/toastr.config.js"></script>
+    <script src="./js/run/app.run.js"></script>
+    <script src="./js/config/router.config.js"></script>
 
-    <script src="https://cdn.bootcss.com/angular-ui-router/0.4.3/angular-ui-router.min.js"></script>
-    <script src="https://cdn.bootcss.com/angular-ui-bootstrap/1.3.2/ui-bootstrap-tpls.min.js"></script>
-    <script src="https://cdn.bootcss.com/angular-local-storage/0.7.1/angular-local-storage.min.js"></script>
-    <script src="https://cdn.bootcss.com/ng-dialog/1.4.0/js/ngDialog.min.js"></script>
+    <script src="./js/service/factory/Constant.js"></script>
+    <script src="./js/service/factory/Util.js"></script>
+    <script src="./js/service/factory/Http.js"></script>
+    <script src="./js/service/factory/Reg.js"></script>
+    <script src="./js/service/factory/check.js"></script>
 
-    <script src="https://cdn.bootcss.com/danialfarid-angular-file-upload/12.2.10/ng-file-upload-shim.min.js"></script>
-    <script src="https://cdn.bootcss.com/danialfarid-angular-file-upload/12.2.10/ng-file-upload.min.js"></script>
-    <script src="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe.js"></script>
-    <script src="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe-ui-default.js"></script>
+    <script src="./js/service/dialog/Loading.js"></script>
+    <script src="./js/service/dialog/AreYouSure.js"></script>
+    <script src="./js/service/dialog/AddProjectDialog.js"></script>
 
 
-    <!-- build:js dist_js/bundle.js -->
+    <script src="./js/service/model/ProjectList.js"></script>
+    <script src="./js/service/model/ConstructTypeList.js"></script>
 
-    <!-- 汉化 -->
-    <script src="./lib/js/angular-locale_zh.js"></script>
-    <!-- 项目启动 -->
-    <script src="./js/config/start.js"></script>
-    <script src="./js/config/config.js"></script>
-    <script src="./js/config/run.js"></script>
-    <!-- 路由引入 -->
-    <script src="./js/route/route.js"></script>
-    <!-- 指令引入 -->
-    <script src="./js/directive/autoFocus.js"></script>
-    <!-- 服务引入 -->
-    <script src="./js/service/$utilFactory.js"></script>
-    <script src="./js/service/Constant.js"></script>
-    <script src="./js/service/Http.js"></script>
-    <script src="./js/service/$httpFactory.js"></script>
-    <script src="./js/service/$handleHttp.js"></script>
-    <script src="./js/service/$areYouSureFactory.js"></script>
-    <script src="./js/service/$loadingFactory.js"></script>
-    <script src="./js/service/$photoSwipeFactory.js"></script>
-    <script src="./js/service/Permission.js"></script>
-    <script src="./js/service/MenuList.js"></script>
-    <!-- 控制器引入 -->
-    <script src="./view/login/loginCtrl.js"></script>
-    <script src="./view/main/mainCtrl.js"></script>
-    <script src="./view/setting/settingCtrl.js"></script>
-    <script src="./view/setting/first/firstCtrl.js"></script>
-    <script src="./view/setting/first/bindProjectCtrl.js"></script>
-    <script src="./view/setting/second/secondCtrl.js"></script>
-    <script src="./view/setting/third/thirdCtrl.js"></script>
-    <script src="./view/list/listCtrl.js"></script>
-    <script src="./view/detail/detailCtrl.js"></script>
-    <script src="./view/detailFirst/detailFirstCtrl.js"></script>
-    <script src="./view/detailSecond/detailSecondCtrl.js"></script>
-    <script src="./view/detailSecond/first/firstCtrl.js"></script>
-    <script src="./view/detailSecond/second/secondCtrl.js"></script>
-    <script src="./view/detailSecond/third/thirdCtrl.js"></script>
-    <script src="./view/detailSecond/fourth/fourthCtrl.js"></script>
-    <script src="./view/detailSecond/fifth/fifthCtrl.js"></script>
-    <script src="./view/detailSecond/sixth/sixthCtrl.js"></script>
-    <script src="./view/detailThird/detailThirdCtrl.js"></script>
-    <script src="./view/detailThird/first/firstCtrl.js"></script>
-    <script src="./view/detailThird/second/secondCtrl.js"></script>
-    <script src="./view/detailThird/third/thirdCtrl.js"></script>
-    <script src="./view/detailThird/third/first/firstCtrl.js"></script>
-    <script src="./view/detailThird/third/second/secondCtrl.js"></script>
-    <script src="./view/detailThird/third/third/thirdCtrl.js"></script>
-    <script src="./view/detailThird/third/fourth/fourthCtrl.js"></script>
-    <script src="./view/detailFourth/detailFourthCtrl.js"></script>
-    <script src="./view/detailFourth/first/firstCtrl.js"></script>
-    <script src="./view/detailFourth/second/secondCtrl.js"></script>
-    <script src="./view/detailFourth/third/thirdCtrl.js"></script>
-
-    <!-- <script src="./js/template/templates.js"></script> -->
-
-    <!-- endbuild -->
+    <script src="./views/login/loginRoute.js"></script>
+    <script src="./views/login/loginCtrl.js"></script>
+    <script src="./views/main/mainRoute.js"></script>
+    <script src="./views/main/mainCtrl.js"></script>
+    <script src="./views/list/listRoute.js"></script>
+    <script src="./views/list/listCtrl.js"></script>
 
 </head>
 
@@ -172,7 +128,7 @@
         </div>
 
     </div>
-    <div ui-view class="first-view">
+    <div ui-view class="root-view">
 
     </div>
 </body>

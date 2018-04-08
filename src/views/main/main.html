@@ -1,0 +1,36 @@
+<div class="main-container">
+
+    <div class="header">
+        <div class="title" ng-click="goHome()">
+            拱墅区发展中心建设工程综合监管平台
+        </div>
+        <div class="user">
+            <div class="name">
+                <span>
+                    Hi,
+                </span>
+                <span>
+                    {{realName}}
+                </span>
+                <span class="fa fa-caret-down"> </span>
+                <div class="operate">
+                    <span class="fa fa-caret-down"> </span>
+                    <div ng-click="startModifyPassword()">
+                        修改密码
+                    </div>
+                    <div ng-click="goToSetting()" ng-if="showSetting">
+                        系统管理
+                    </div>
+                    <div ng-click="loginOut()">
+                        退出登录
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ui-view class="main-view">
+
+    </div>
+
+</div>

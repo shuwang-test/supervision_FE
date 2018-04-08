@@ -1,0 +1,241 @@
+div.list-container {
+	div.menu {
+		position: relative;
+		height: 5%;
+		background-color: #ececec;
+		z-index: 100;
+		> ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			margin-left: 50px;
+			height: 100%;
+			> li {
+				float: left;
+				position: relative;
+				width: 120px;
+				height: 100%;
+				margin-right: 15px;
+				> span.circle {
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					vertical-align: middle;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				> span.text {
+					display: inline-block;
+					text-align: center;
+					font-size: 18px;
+					width: 100%;
+					height: 30px;
+					line-height: 30px;
+					vertical-align: middle;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				&.first {
+					> span.text {
+						font-size: 22px;
+						color: #f6b002;
+						margin-right: 75px;
+						text-align: left;
+					}
+				}
+			}
+		}
+		div.search {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 160px;
+			height: 32px;
+			&.show {
+				> span.clear {
+					opacity: 1;
+				}
+				> span.name {
+					opacity: 1;
+				}
+				> span.fa {
+					color: rgb(33, 156, 234);
+				}
+				> input {
+					width: 150px;
+					opacity: 1;
+				}
+			}
+			> span {
+				font-size: 18px;
+				transition: all ease 0.5s;
+				vertical-align: middle;
+				height: 32px;
+				line-height: 32px;
+				&.clear {
+					display: inline-block;
+					border: 1px solid #219cea;
+					padding: 0 8px;
+					border-radius: 4px;
+					cursor: pointer;
+					opacity: 0;
+					background-color: #fff;
+				}
+				&.name {
+					opacity: 0;
+				}
+				&.fa {
+					cursor: pointer;
+					font-size: 28px;
+				}
+			}
+			> input {
+				height: 32px;
+				line-height: 32px;
+				width: 20px;
+				vertical-align: middle;
+				padding: 0;
+				padding-left: 5px;
+				transition: all ease 0.5s;
+				opacity: 0;
+				border-radius: 4px;
+				border: 1px solid #ccc;
+				box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+				background-color: #fff;
+				background-image: none;
+				&:focus {
+					border-color: #66afe9;
+					outline: 0;
+					-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+						0 0 8px rgba(102, 175, 233, 0.6);
+					box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+						0 0 8px rgba(102, 175, 233, 0.6);
+				}
+			}
+		}
+		div.new {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 40px;
+			font-size: 18px;
+			height: 32px;
+			cursor: pointer;
+			> span.fa {
+				color: rgb(33, 156, 234);
+				font-size: 28px;
+			}
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				height: 32px;
+				line-height: 32px;
+			}
+		}
+	}
+	div.table {
+		margin: 0;
+		overflow: auto;
+		> table {
+			width: 100%;
+			border-collapse: separate;
+			tr.header {
+				background-color: #3b4a4d;
+				color: #ffffff;
+				font-size: 18px;
+				text-align: center;
+				td {
+					padding: 2px 0;
+					background-color: #3b4a4d;
+				}
+				td.process {
+					border-bottom: 2px solid #bbbbbb;
+				}
+				&.sub {
+					font-size: 14px;
+				}
+			}
+			tr.content {
+				cursor: pointer;
+				&.even {
+					td {
+						background-color: #f7f8fa;
+					}
+				}
+				td:first-child {
+					font-size: 25px;
+					font-weight: bold;
+				}
+				// td {
+				// 	height: 10000px;
+				// }
+			}
+			tr {
+				td {
+					text-align: center;
+					position: relative;
+					background-color: #ffffff;
+					> div {
+						width: 100%;
+						height: 10px;
+						position: absolute;
+						transform: translateY(-50%);
+						left: 0;
+						background-color: #9fbb51;
+						border-radius: 15px;
+						z-index: 10;
+						&.unfinished {
+							background-color: #fa9695;
+						}
+						&.all-process {
+							width: 950%;
+							height: 14px;
+							border: 1px solid #bbbbbb;
+							background-color: transparent;
+							z-index: 100;
+						}
+					}
+				}
+			}
+		}
+	}
+	div.page-container {
+		position: relative;
+		height: 54px;
+		div.page-list {
+			@include vertical;
+			right: 200px;
+			> ul.pagination {
+				margin: 0;
+				vertical-align: middle;
+				> li.active {
+					> a {
+						background-color: #219cea;
+					}
+				}
+			}
+		}
+		div.page-choose {
+			@include vertical;
+			right: 20px;
+			> span {
+				display: inline-block;
+				vertical-align: middle;
+				height: 34px;
+				line-height: 34px;
+			}
+			> input {
+				width: 50px;
+				padding: 0 5px;
+			}
+			> button {
+				padding: 3px 10px;
+				background-color: #219cea;
+				outline: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+<div class="list-container">
+    <div class="menu">
+        <ul class="clear">
+            <li class="first">
+                <span class="text">重点项目</span>
+            </li>
+            <li>
+                <span class="circle" style="background:#FA9695;"> </span>
+                <span class="text">未完成</span>
+            </li>
+            <!-- <li>
+                <span class="circle" style="background:#47CEEC"></span>
+                <span class="text">建设中 </span>
+            </li> -->
+            <li>
+                <span class="circle" style="background:#9FBB51;"></span>
+                <span class="text">已完成</span>
+            </li>
+        </ul>
+        <div class="search" ng-class="{'show':showSearch}">
+            <span class="name">
+                项目名称 
+            </span>
+            <input type="text" placeholder="请输入项目名称" ng-model="searchData.name">
+            <span class="fa fa-search" ng-mouseover="startSearch()" ng-click="search()"></span>
+            <!-- <span class="clear" ng-click="clearSearch()">清空</span> -->
+        </div>
+        <div class="new" ng-click="addProject()">
+            <span class="fa fa-plus-square"></span>
+            <span>
+                新建项目
+            </span>
+        </div>
+    </div>
+
+    <div class="table">
+        <table>
+            <tr class="header">
+                <td rowspan="2" style="width:5%;">序号</td>
+                <td rowspan="2" style="width:20%;">重点项目</td>
+                <td rowspan="2" style="width:10%;">责任单位</td>
+                <td rowspan="2" style="width:10%;">建设类型</td>
+                <td colspan="9" class="process" style="width:53%;">项目进度</td>
+                <td style="width:2%;"></td>
+            </tr>
+            <tr class="header sub">
+                <td style="width:5.5789473684%">项目决策</td>
+                <td style="width:8.3684210526%">投资项目确立</td>
+                <td style="width:5.5789473684%">工程设计</td>
+                <td style="width:5.5789473684%">用地审批</td>
+                <td style="width:5.5789473684%">开工准备</td>
+                <td style="width:5.5789473684%">施工建设</td>
+                <td style="width:5.5789473684%">竣工验收</td>
+                <td style="width:5.5789473684%">竣工审计</td>
+                <td style="width:5.5789473684%">权证办理</td>
+                <td></td>
+            </tr>
+            <tr class="content" ng-click="goToDetail(project.id)" ng-repeat="project in projectList track by $index" ng-class="{'even':$index%2===1}">
+                <td>{{$index+1}}</td>
+                <td>
+                    <span>
+                        <!-- 秉祥巷（莫干山路-湖墅南路） -->
+                        {{project.name}}
+                    </span>
+                    <!-- <span>
+                        [2015]
+                    </span> -->
+                </td>
+                <td>
+                    <span>
+                        {{project.dutyUnit}}
+                    </span>
+                </td>
+                <td>
+                    <span>
+                        {{project.constructTypeName}}
+                    </span>
+                </td>
+                <td>
+                    <div class="all-process"></div>
+                    <div class="process" ng-if="project.status>=1" ng-class="{'unfinished':project.status == 1}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=2" ng-class="{'unfinished':project.status == 2}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=3" ng-class="{'unfinished':project.status == 3}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=4" ng-class="{'unfinished':project.status == 4}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=5" ng-class="{'unfinished':project.status == 5}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=6" ng-class="{'unfinished':project.status == 6}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=7" ng-class="{'unfinished':project.status == 7}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=8" ng-class="{'unfinished':project.status == 8}"></div>
+                </td>
+                <td>
+                    <div class="process" ng-if="project.status>=9" ng-class="{'unfinished':project.status == 9}"></div>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="page-container">
+        <div class="page-list">
+            <uib-pagination total-items="pagination.totalItems" ng-model="pagination.currentPage" max-size="pagination.maxSize" first-text="第一页"
+                previous-text="上一页" next-text="下一页" last-text="最后页" boundary-links="true" boundary-link-numbers="true" items-per-page="pagination.aPageNumber"
+                ng-change="pageChange()"></uib-pagination>
+        </div>
+        <div class="page-choose">
+            <span>
+                跳到第
+            </span>
+            <input type="text" ng-model="pageData.page">
+            <span>页</span>
+            <button class="btn btn-primary" ng-click="goToPage()">确定</button>
+        </div>
+    </div>
+</div>

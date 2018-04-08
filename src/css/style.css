@@ -1,0 +1,448 @@
+html,
+body {
+  position: relative;
+  min-width: 1366px;
+  min-height: 730px;
+  height: 100%; }
+
+div.root-view {
+  height: 100%; }
+  div.root-view div.login-container {
+    height: 100%; }
+  div.root-view div.main-container {
+    height: 100%; }
+    div.root-view div.main-container div.header {
+      height: 8%; }
+    div.root-view div.main-container div.main-view {
+      height: 92%; }
+      div.root-view div.main-container div.main-view div.list-container {
+        height: 100%; }
+
+div#toast-container {
+  position: absolute;
+  top: 200px; }
+
+div.ngdialog.ngdialog-theme-default.loading {
+  padding: 0; }
+  div.ngdialog.ngdialog-theme-default.loading div.ngdialog-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.4);
+    position: relative; }
+    div.ngdialog.ngdialog-theme-default.loading div.ngdialog-content > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
+      div.ngdialog.ngdialog-theme-default.loading div.ngdialog-content > div > div {
+        text-align: center;
+        color: #219cea;
+        font-size: 20px; }
+
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform: translateY(0); }
+  to {
+    opacity: 0.1;
+    transform: translateY(-16px); } }
+
+.bouncing-loader {
+  text-align: center; }
+
+.bouncing-loader > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin: 10px 5px;
+  background: #219cea;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate; }
+
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s; }
+
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s; }
+
+div.ngdialog-theme-default.are-you-sure > div.ngdialog-content {
+  text-align: center;
+  font-size: 18px; }
+  div.ngdialog-theme-default.are-you-sure > div.ngdialog-content > div > div:first-child {
+    padding: 20px 0; }
+  div.ngdialog-theme-default.are-you-sure > div.ngdialog-content > div > div > button {
+    width: 100px;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+    background-color: #337ab7; }
+    div.ngdialog-theme-default.are-you-sure > div.ngdialog-content > div > div > button:first-child {
+      margin-right: 25px; }
+
+div.ngdialog.ngdialog-theme-default.add-project {
+  top: 0px;
+  padding-bottom: 0; }
+  @media screen and (max-height: 650px) {
+    div.ngdialog.ngdialog-theme-default.add-project {
+      top: -80px; } }
+  div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content {
+    text-align: center;
+    width: 1000px;
+    min-width: 1000px;
+    padding: 0; }
+    div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.title {
+      font-size: 25px;
+      padding: 10px 0;
+      color: #ffffff;
+      background-color: #337ab7;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content {
+      padding: 15px 0; }
+      div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form {
+        width: 920px;
+        margin: 0 auto;
+        text-align: left; }
+        div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group {
+          padding: 10px 5px;
+          width: 300px;
+          text-align: left;
+          position: relative; }
+          div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group > div.img-container {
+            padding: 0;
+            position: relative; }
+            div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group > div.img-container > img {
+              max-width: 90px;
+              height: 70px; }
+            div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group > div.img-container > div {
+              position: absolute;
+              top: 0;
+              color: #ffffff;
+              height: 70px;
+              line-height: 70px;
+              background-color: rgba(0, 0, 0, 0.5);
+              width: 100%; }
+          div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group > label {
+            width: 100px;
+            text-align: center; }
+          div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group > input.start-time {
+            width: 130px; }
+          div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.content > form > div.form-group > button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            outline: none; }
+    div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.button {
+      padding: 15px; }
+      div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.button > button.btn {
+        width: 100px;
+        font-size: 18px;
+        outline: none; }
+        div.ngdialog.ngdialog-theme-default.add-project div.ngdialog-content > div > div.button > button.btn:first-child {
+          margin-right: 50px; }
+
+div.login-container {
+  background-image: url("../assets/images/bg.jpg");
+  background-size: cover;
+  position: relative; }
+  div.login-container > div.title {
+    height: 8%;
+    position: relative;
+    background-color: #219cea; }
+    div.login-container > div.title > div {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 50px;
+      font-size: 25px;
+      color: #fff; }
+  div.login-container > div.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(171, 179, 181, 0.6);
+    padding: 30px 70px;
+    border-radius: 10px; }
+    div.login-container > div.content > div {
+      margin-bottom: 20px;
+      position: relative; }
+      div.login-container > div.content > div.button {
+        width: 320px;
+        margin-bottom: 0;
+        padding: 10px 0;
+        text-align: center;
+        background-color: #219cea;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer; }
+      div.login-container > div.content > div > input {
+        width: 320px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 40px 0 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+        div.login-container > div.content > div > input:focus {
+          outline: 0;
+          border-color: #66afe9;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+      div.login-container > div.content > div > span.fa {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        vertical-align: middle;
+        right: 15px;
+        color: #219cea;
+        font-size: 30px; }
+
+div.main-container {
+  height: 100%; }
+  div.main-container > div.header {
+    position: relative;
+    background-color: #219cea;
+    font-size: 25px;
+    height: 8%;
+    color: #ffffff;
+    z-index: 999; }
+    div.main-container > div.header > div.title {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%);
+      cursor: pointer; }
+    div.main-container > div.header > div.user {
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      transform: translateY(-50%);
+      cursor: pointer; }
+      div.main-container > div.header > div.user > div.name {
+        position: relative;
+        padding: 5px 0; }
+        div.main-container > div.header > div.user > div.name:hover > div.operate {
+          display: block; }
+        div.main-container > div.header > div.user > div.name > div.operate {
+          display: none;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          width: 120px;
+          text-align: center;
+          background-color: #ffffff;
+          color: #323437;
+          z-index: 999;
+          border-radius: 4px;
+          padding: 5px 0; }
+          div.main-container > div.header > div.user > div.name > div.operate > span {
+            position: absolute;
+            right: 20px;
+            top: -10px;
+            z-index: 1000;
+            color: #ffffff;
+            transform: rotate(-180deg); }
+          div.main-container > div.header > div.user > div.name > div.operate > div {
+            vertical-align: middle;
+            padding: 2px 0;
+            font-size: 14px;
+            padding: 5px 0;
+            transition: all 0.3s ease; }
+            div.main-container > div.header > div.user > div.name > div.operate > div:hover {
+              background-color: rgba(33, 156, 234, 0.8);
+              color: #ffffff; }
+
+div.list-container div.menu {
+  position: relative;
+  height: 5%;
+  background-color: #ececec;
+  z-index: 100; }
+  div.list-container div.menu > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    height: 100%; }
+    div.list-container div.menu > ul > li {
+      float: left;
+      position: relative;
+      width: 120px;
+      height: 100%;
+      margin-right: 15px; }
+      div.list-container div.menu > ul > li > span.circle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      div.list-container div.menu > ul > li > span.text {
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      div.list-container div.menu > ul > li.first > span.text {
+        font-size: 22px;
+        color: #f6b002;
+        margin-right: 75px;
+        text-align: left; }
+  div.list-container div.menu div.search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 160px;
+    height: 32px; }
+    div.list-container div.menu div.search.show > span.clear {
+      opacity: 1; }
+    div.list-container div.menu div.search.show > span.name {
+      opacity: 1; }
+    div.list-container div.menu div.search.show > span.fa {
+      color: #219cea; }
+    div.list-container div.menu div.search.show > input {
+      width: 150px;
+      opacity: 1; }
+    div.list-container div.menu div.search > span {
+      font-size: 18px;
+      transition: all ease 0.5s;
+      vertical-align: middle;
+      height: 32px;
+      line-height: 32px; }
+      div.list-container div.menu div.search > span.clear {
+        display: inline-block;
+        border: 1px solid #219cea;
+        padding: 0 8px;
+        border-radius: 4px;
+        cursor: pointer;
+        opacity: 0;
+        background-color: #fff; }
+      div.list-container div.menu div.search > span.name {
+        opacity: 0; }
+      div.list-container div.menu div.search > span.fa {
+        cursor: pointer;
+        font-size: 28px; }
+    div.list-container div.menu div.search > input {
+      height: 32px;
+      line-height: 32px;
+      width: 20px;
+      vertical-align: middle;
+      padding: 0;
+      padding-left: 5px;
+      transition: all ease 0.5s;
+      opacity: 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      background-color: #fff;
+      background-image: none; }
+      div.list-container div.menu div.search > input:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+  div.list-container div.menu div.new {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    font-size: 18px;
+    height: 32px;
+    cursor: pointer; }
+    div.list-container div.menu div.new > span.fa {
+      color: #219cea;
+      font-size: 28px; }
+    div.list-container div.menu div.new span {
+      display: inline-block;
+      vertical-align: middle;
+      height: 32px;
+      line-height: 32px; }
+
+div.list-container div.table {
+  margin: 0;
+  overflow: auto; }
+  div.list-container div.table > table {
+    width: 100%;
+    border-collapse: separate; }
+    div.list-container div.table > table tr.header {
+      background-color: #3b4a4d;
+      color: #ffffff;
+      font-size: 18px;
+      text-align: center; }
+      div.list-container div.table > table tr.header td {
+        padding: 2px 0;
+        background-color: #3b4a4d; }
+      div.list-container div.table > table tr.header td.process {
+        border-bottom: 2px solid #bbbbbb; }
+      div.list-container div.table > table tr.header.sub {
+        font-size: 14px; }
+    div.list-container div.table > table tr.content {
+      cursor: pointer; }
+      div.list-container div.table > table tr.content.even td {
+        background-color: #f7f8fa; }
+      div.list-container div.table > table tr.content td:first-child {
+        font-size: 25px;
+        font-weight: bold; }
+    div.list-container div.table > table tr td {
+      text-align: center;
+      position: relative;
+      background-color: #ffffff; }
+      div.list-container div.table > table tr td > div {
+        width: 100%;
+        height: 10px;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 0;
+        background-color: #9fbb51;
+        border-radius: 15px;
+        z-index: 10; }
+        div.list-container div.table > table tr td > div.unfinished {
+          background-color: #fa9695; }
+        div.list-container div.table > table tr td > div.all-process {
+          width: 950%;
+          height: 14px;
+          border: 1px solid #bbbbbb;
+          background-color: transparent;
+          z-index: 100; }
+
+div.list-container div.page-container {
+  position: relative;
+  height: 54px; }
+  div.list-container div.page-container div.page-list {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 200px; }
+    div.list-container div.page-container div.page-list > ul.pagination {
+      margin: 0;
+      vertical-align: middle; }
+      div.list-container div.page-container div.page-list > ul.pagination > li.active > a {
+        background-color: #219cea; }
+  div.list-container div.page-container div.page-choose {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; }
+    div.list-container div.page-container div.page-choose > span {
+      display: inline-block;
+      vertical-align: middle;
+      height: 34px;
+      line-height: 34px; }
+    div.list-container div.page-container div.page-choose > input {
+      width: 50px;
+      padding: 0 5px; }
+    div.list-container div.page-container div.page-choose > button {
+      padding: 3px 10px;
+      background-color: #219cea;
+      outline: none; }

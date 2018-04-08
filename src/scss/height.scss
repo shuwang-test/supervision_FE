@@ -1,0 +1,25 @@
+html,
+body {
+	position: relative;
+	min-width: 1366px;
+	min-height: 730px;
+	height: 100%;
+}
+div.root-view {
+	height: 100%;
+	div.login-container {
+		height: 100%;
+	}
+	div.main-container {
+		height: 100%;
+		div.header {
+			height: 8%;
+		}
+		div.main-view {
+			height: 92%;
+			div.list-container {
+				height: 100%;
+			}
+		}
+	}
+}
