@@ -1,0 +1,59 @@
+div.compare-progress-container {
+	div.month-progress {
+		margin: 0 auto;
+		width: 1400px;
+		overflow-x: auto;
+		> div.month-container {
+			margin: 0 auto;
+			height: 45px;
+			position: relative;
+			> div {
+				vertical-align: middle;
+				padding: 2px 0;
+				text-align: center;
+				position: absolute;
+				> div.month {
+					border: 1px solid #ccc;
+				}
+				> div.day-container {
+					> div {
+						display: inline-block;
+						vertical-align: middle;
+						padding: 2px 0;
+						border: 1px solid #ccc;
+						font-size: 12px;
+						width: 14px;
+						text-align: center;
+					}
+				}
+			}
+		}
+		> div.progress-container {
+			width: 1694px;
+			height: 20px;
+			position: relative;
+			left: 0;
+			border: 1px solid #ccc;
+			> span.plan {
+				display: inline-block;
+				vertical-align: middle;
+				position: absolute;
+				top: 5px;
+				left: 280px;
+				width: 280px;
+				height: 2px;
+				background-color: slateblue;
+			}
+			> span.actual {
+				display: inline-block;
+				vertical-align: middle;
+				position: absolute;
+				top: 10px;
+				left: 140px;
+				width: 140px;
+				height: 2px;
+				background-color: red;
+			}
+		}
+	}
+}

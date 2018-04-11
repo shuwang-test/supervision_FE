@@ -1,0 +1,100 @@
+<div class="actual-progress-container">
+
+</div>
+
+
+
+
+<!-- <div class="detail-second-first">
+    <div class="img-list">
+        <div class="img-container progress-plan" ng-class="{'editing':editing}" ng-click="chooseImage($index)" ng-repeat='image in imageList track by $index'>
+            <img ng-src="{{image.src}}" alt="" ng-click="showImage($index)" class="detail-second-first-img">
+            <div class="select-container" ng-show="editing">
+                <span class="fa fa-check" ng-show="image.select"></span>
+            </div>
+            <div class="info">
+                <div>
+                    <span>文件名：</span>
+                    <span>{{image.name}}</span>
+                </div>
+                <div>
+                    <span>上传用户：</span>
+                    <span>{{image.userName}}</span>
+                </div>
+                <div>
+                    <span>
+                    上传时间：
+                </span>
+                    <span>
+                    {{image.createDate}}
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="word-list">
+        <div class="word-container" ng-repeat="word in wordList track by $index" ng-class="{'editing':editing}">
+            <div ng-click="chooseWord($index)">
+                <span class="fa fa-file-text-o"></span>
+                <span>{{word.name}}</span>
+                <a ng-href="{{word.href}}">下载</a>
+                <div class="select-container" ng-show="editing">
+                    <span class="fa fa-check" ng-show="word.select"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="upload-list">
+        <div class="upload-container" ng-repeat="image in uploadImageList">
+            <div>
+                <img ngf-src="image" alt="">
+                <div class="uploading" ng-if="!image.hasUpload">
+                    <div>
+                        上传中...
+                    </div>
+                </div>
+                <div class="uploading" ng-if="image.hasUpload">
+                    <div>
+                        上传成功
+                    </div>
+                </div>
+                <div class="uploading" ng-if="image.uploadError">
+                    <div>
+                        上传失败
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upload-container" ng-repeat="word in uploadWordList">
+            <div>
+                <span class="fa fa-file-text-o"></span>
+                <span>{{word.name}}</span>
+                <div class="uploading" ng-if="!word.hasUpload">
+                    <div>
+                        上传中...
+                    </div>
+                </div>
+                <div class="uploading" ng-if="word.hasUpload">
+                    <div>
+                        上传成功
+                    </div>
+                </div>
+                <div class="uploading" ng-if="word.uploadError">
+                    <div>
+                        上传失败
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-list">
+        <div class="btn btn-primary" ngf-select="true" ngf-change="change($files,$invalidFiles)" ngf-pattern="'image/*'" ngf-multiple="true"
+            ng-show="!editing">
+            上传
+        </div>
+        <button class="btn btn-primary" ng-show="!editing" ng-click="startEditing()">编辑</button>
+        <button class="btn btn-primary" ng-show="editing" ng-click="chooseAll()">全选</button>
+        <button class="btn btn-primary" ng-show="editing" ng-click="deleteImageAndWord()">删除</button>
+        <button class="btn btn-primary" ng-show="editing" ng-click="cancelEditing()">取消</button>
+    </div>
+</div> -->

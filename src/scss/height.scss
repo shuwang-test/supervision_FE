@@ -20,6 +20,12 @@ div.root-view {
 			div.list-container {
 				height: 100%;
 			}
+			div.detail-container {
+				height: 100%;
+				div.detail-view {
+					height: 100%;
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,46 @@
+<div>
+    <div class="title">
+        会签详情
+    </div>
+    <div class="content">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label>合同名称：</label>
+                <input type="text" class="form-control" ng-model="contract.name" disabled>
+            </div>
+            <div class="form-group">
+                <label>创建者：</label>
+                <input type="text" class="form-control" ng-model="contract.userName" disabled>
+            </div>
+        </form>
+
+        <table>
+            <thead class="header">
+                <td>当前会签人</td>
+                <td>上级会签人</td>
+                <td>状态</td>
+                <td>创建时间</td>
+                <td>处理时间</td>
+                <td>备注</td>
+                <td style="width: 12px;"></td>
+            </thead>
+            <tr class="content" ng-repeat="countersign in contract.countersignList">
+                <td>{{countersign.userName}}</td>
+                <td>{{countersign.sourceUserName}}</td>
+                <td>{{countersign.statusName}}</td>
+                <td>{{countersign.createDate}}</td>
+                <td>{{countersign.updateDate}}</td>
+                <td>{{countersign.opinion}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+    <div class="button">
+        <button class="btn btn-primary btn-one" ng-click="closeContractDetail()">返回</button>
+    </div>
+</div>

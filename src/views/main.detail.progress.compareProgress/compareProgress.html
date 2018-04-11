@@ -1,0 +1,23 @@
+<div class="compare-progress-container">
+    <div class="month-progress">
+        <div class="month-container">
+            <div ng-repeat="month in monthList track by $index" ng-style="{'left':month.left+'px','width':month.width+'px'}">
+                <div class="month">{{month.name}}</div>
+                <div class="day-container">
+                    <div ng-repeat="day in month.dayList">
+                        {{day}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-container" ng-repeat="progress in progressList">
+            <span class="plan" ng-style="{left:progress.plan.left+'px',width:progress.plan.width +'px'}">
+            
+                    </span>
+            <span class="actual" ng-style="{left:progress.actual.left+'px',width:progress.actual.width +'px'}">
+            
+                        </span>
+        </div>
+    </div>
+
+</div>

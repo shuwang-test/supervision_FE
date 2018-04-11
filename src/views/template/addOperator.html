@@ -1,0 +1,37 @@
+<div>
+    <div class="title">
+        添加用户
+    </div>
+    <div>
+        <span>
+            用户名：
+        </span>
+        <input type="text" ng-model="addOperatorData.realName">
+    </div>
+    <div>
+        <span>
+                登录名：
+         </span>
+        <input type="text" ng-model="addOperatorData.loginName">
+    </div>
+    <div>
+        <span>
+                    密码：
+        </span>
+        <input type="password" ng-model="addOperatorData.password">
+    </div>
+    <div>
+        <span>
+                    确认密码：
+        </span>
+        <input type="password" ng-model="addOperatorData.passwordAgain">
+    </div>
+    <div>
+        <span>角色：</span>
+        <select ng-options="role.name for role in roleList" ng-model="addOperatorData.role"></select>
+    </div>
+    <div class="button">
+        <button class="btn primary" ng-click="certainAddOperator()">确定</button>
+        <button class="btn primary" ng-click="cancelAddOperator()">取消</button>
+    </div>
+</div>

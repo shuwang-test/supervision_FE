@@ -72,33 +72,34 @@
             </div>
             <div class="form-group">
                 <label>效果图：</label>
-                <div class="btn btn-default" ngf-select="uploadFiles($file, $invalidFiles,1)" ngf-pattern="'image/*'" ngf-multiple="false"
-                    ng-model="addProjectData.effectPic">
-                    选择图片
+                <div class="btn btn-primary" ngf-select="true" ngf-change="uploadEffectPic($files,$invalidFiles)" ngf-pattern="'image/*'"
+                    ngf-multiple="true">
+                    上传
                 </div>
-                <div class="btn btn-default img-container">
-                    <img ngf-src="addProjectData.effectPic">
-                    <div ng-if="addProjectData.effectPic&&!addProjectData.effectPicSrc">
-                        上传中...
-                    </div>
-                    <div ng-if="addProjectData.effectPicSrc">
-                        上传成功
+            </div>
+            <div class="form-group"></div>
+            <div class="form-group">
+                <label>施工许可证：</label>
+                <div class="btn btn-primary" ngf-select="true" ngf-change="uploadLicence($files,$invalidFiles)" ngf-pattern="'image/*'" ngf-multiple="true">
+                    上传
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="img-container">
+                    <div ng-repeat="effectPic in addProjectData.effectPicList">
+                        <img ngf-src="effectPic">
+                        <span class="fa fa-trash-o" ng-click="deleteEffectPic(effectPic)"></span>
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <label>施工许可证：</label>
-                <div class="btn btn-default" ngf-select="uploadFiles($file, $invalidFiles,2)" ngf-pattern="'image/*'" ngf-multiple="false"
-                    ng-model="addProjectData.licence">
-                    选择图片
-                </div>
-                <div class="btn btn-default img-container">
-                    <img ngf-src="addProjectData.licence">
-                    <div ng-if="addProjectData.licence&&!addProjectData.licenceSrc">
-                        上传中...
-                    </div>
-                    <div ng-if="addProjectData.licenceSrc">
-                        上传成功
+
+            </div>
+            <div class="form-group">
+                <div class="img-container">
+                    <div ng-repeat="licence in addProjectData.licenceList">
+                        <img ngf-src="licence">
+                        <span class="fa fa-trash-o" ng-click="deleteLicence(licence)"></span>
                     </div>
                 </div>
             </div>

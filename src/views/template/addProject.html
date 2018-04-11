@@ -1,0 +1,115 @@
+<div>
+    <div class="title">
+        新建项目
+    </div>
+    <div class="content">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label>项目名称：</label>
+                <input type="text" class="form-control" placeholder="请输入项目名称" ng-model="addProjectData.name">
+            </div>
+            <div class="form-group">
+                <label>项目编号：</label>
+                <input type="text" class="form-control" placeholder="请输入项目编号" ng-model="addProjectData.num">
+            </div>
+            <div class="form-group">
+                <label>建设地址：</label>
+                <input type="text" class="form-control" placeholder="请输入建设地址" ng-model="addProjectData.address">
+            </div>
+            <div class="form-group">
+                <label>责任单位：</label>
+                <input type="text" class="form-control" placeholder="请输入责任单位" ng-model="addProjectData.dutyUnit">
+            </div>
+            <div class="form-group">
+                <label>项目负责人：</label>
+                <input type="text" class="form-control" placeholder="请输入项目负责人" ng-model="addProjectData.principal">
+            </div>
+            <div class="form-group">
+                <label>建设类型：</label>
+                <select class="form-control" ng-model="addProjectData.constructType" ng-options="constructType.title for constructType in constructTypeList">
+                </select>
+            </div>
+            <div class="form-group">
+                <label>面积：</label>
+                <input type="text" class="form-control" placeholder="请输入面积" ng-model="addProjectData.size">
+            </div>
+            <div class="form-group">
+                <label>总投资额：</label>
+                <input type="text" class="form-control" placeholder="请输入总投资额" ng-model="addProjectData.sum">
+            </div>
+            <div class="form-group">
+                <label>施工单位：</label>
+                <input type="text" class="form-control" placeholder="请输入施工单位" ng-model="addProjectData.constructUnit">
+            </div>
+            <div class="form-group">
+                <label>用途：</label>
+                <input type="text" class="form-control" placeholder="请输入用途" ng-model="addProjectData.use">
+            </div>
+            <div class="form-group">
+                <label>设计单位：</label>
+                <input type="text" class="form-control" placeholder="请输入设计单位" ng-model="addProjectData.designUnit">
+            </div>
+            <div class="form-group">
+                <label>勘测单位：</label>
+                <input type="text" class="form-control" placeholder="请输入勘测单位" ng-model="addProjectData.surveyUnit">
+            </div>
+            <div class="form-group">
+                <label>监管单位：</label>
+                <input type="text" class="form-control" placeholder="请输入监管单位" ng-model="addProjectData.superviseUnit">
+            </div>
+            <div class="form-group">
+                <label>业主单位：</label>
+                <input type="text" class="form-control" placeholder="请输入业主单位" ng-model="addProjectData.ownerUnit">
+            </div>
+            <div class="form-group">
+                <label>开工时间：</label>
+                <input type="text" class="form-control start-time" uib-datepicker-popup="{{format}}" ng-model="addProjectData.startDate"
+                    is-open="startTime.show" ng-required="true" close-text="关闭" clear-text="清空" current-text="今天" close-text="关闭"
+                    placeholder="开始时间" alt-input-formats="altInputFormats" datepicker-options="dateOptions" />
+                <button type="button" class="btn btn-default" ng-click="showStartTime()">
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </button>
+            </div>
+            <div class="form-group">
+                <label>效果图：</label>
+                <div class="btn btn-default" ngf-select="uploadFiles($file, $invalidFiles,1)" ngf-pattern="'image/*'" ngf-multiple="false"
+                    ng-model="addProjectData.effectPic">
+                    选择图片
+                </div>
+                <div class="btn btn-default img-container">
+                    <img ngf-src="addProjectData.effectPic">
+                    <div ng-if="addProjectData.effectPic&&!addProjectData.effectPicSrc">
+                        上传中...
+                    </div>
+                    <div ng-if="addProjectData.effectPicSrc">
+                        上传成功
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>施工许可证：</label>
+                <div class="btn btn-default" ngf-select="uploadFiles($file, $invalidFiles,2)" ngf-pattern="'image/*'" ngf-multiple="false"
+                    ng-model="addProjectData.licence">
+                    选择图片
+                </div>
+                <div class="btn btn-default img-container">
+                    <img ngf-src="addProjectData.licence">
+                    <div ng-if="addProjectData.licence&&!addProjectData.licenceSrc">
+                        上传中...
+                    </div>
+                    <div ng-if="addProjectData.licenceSrc">
+                        上传成功
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="button">
+        <button class="btn btn-primary" ng-click="certainAddProject()">
+            确定
+        </button>
+        <button class="btn btn-primary" ng-click="cancelAddProject()">
+            取消
+        </button>
+    </div>
+</div>

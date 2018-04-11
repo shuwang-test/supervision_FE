@@ -1,0 +1,19 @@
+<div class="detail-fourth">
+    <div class="menu">
+        <ul class="clear" menu-left>
+            <span class="fa fa-caret-down" flag-left></span>
+            <li ng-class="{'active':detailFourthMenu == 1}" ng-click="go(1)" ng-if="userHasPermission('计划进度')">
+                <span>计划进度</span>
+            </li>
+            <li ng-class="{'active':detailFourthMenu == 2}" ng-click="go(2)" ng-if="userHasPermission('实际进度')">
+                <span> 实际进度</span>
+            </li>
+            <li ng-class=" { 'active':detailFourthMenu==3 } " ng-click="go(3) " ng-if="userHasPermission('进度比照图')">
+                <span>进度比照图</span>
+            </li>
+        </ul>
+    </div>
+    <div ui-view class="detail-fourth-view">
+
+    </div>
+</div>

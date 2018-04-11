@@ -1,7 +1,14 @@
 ;(function() {
 	'use strict'
 	angular.module('app').run(appRun)
-	function appRun($state, $rootScope, localStorageService, toastr, Constant) {
+	function appRun(
+		$state,
+		$rootScope,
+		localStorageService,
+		toastr,
+		Constant,
+		$timeout
+	) {
 		/**
 		 * 查看当前接口地址
 		 */
@@ -12,6 +19,7 @@
 		 * 本地获取到存取的用户，跳转到其他页面不作处理，跳转到登录页面需要进入主界面
 		 */
 		$rootScope.$on('$stateChangeStart', function(event, toState) {
+			// console.log(toState)
 			if (!localStorageService.get('user')) {
 				if (toState.url != '/login') {
 					event.preventDefault() //阻止路由跳转(不执行当前路由控制器里的代码)

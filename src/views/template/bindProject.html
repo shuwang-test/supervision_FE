@@ -1,0 +1,110 @@
+<div ng-controller="bindProjectCtrl">
+    <div class="title" ng-click="init()">
+        <span>绑定项目</span>
+        <span class="info">({{ngDialogData.roleName}}：{{ngDialogData.realName}})</span>
+    </div>
+    <div class="bind">
+        <span>已绑定项目</span>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <td style="width:20%;">
+                    <span>编号</span>
+                </td>
+                <td style="width:20%;">
+                    <span>项目名称</span>
+                </td>
+                <td style="width:20%;">
+                    <span>施工单位</span>
+                </td>
+                <td style="width:20%;">
+                    <span>施工时间</span>
+                </td>
+                <td colspan="2" style="width:20%;">
+                    <span>操作</span>
+                </td>
+            </tr>
+            <tr ng-repeat="project in bindProjectList">
+                <td>{{project.num}}</td>
+                <td>{{project.name}}</td>
+                <td>{{project.constructUnit}}</td>
+                <td>{{project.startDate}}</td>
+                <td ng-click="showProjectDetail(project)" class="can-click">
+                    <span><i class="fa fa-eye" aria-hidden="true"></i>查看</span>
+                </td>
+                <td ng-click="unBindProject(project)" class="can-click">
+                    <span>
+                            <i class="fa fa-unlock-alt"></i>
+                            解绑
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="page-container">
+        <uib-pagination total-items="pagination1.totalItems" ng-model="pagination1.currentPage" max-size="pagination1.maxSize" first-text="第一页"
+            previous-text="上一页" next-text="下一页" last-text="最后页" boundary-links="true" boundary-link-numbers="true" items-per-page="pagination1.aPageNumber"
+            ng-change="pagination1.pageChange()" num-pages="pagination1.numPages"></uib-pagination>
+        <div class="choose-page">
+            <span>
+                        跳到第
+                    </span>
+            <input type="text" ng-model="pageData.page1">
+            <span>页</span>
+            <button class="btn btn-primary" ng-click="goToPage1()">确定</button>
+        </div>
+    </div>
+    <div class="bind">
+        <span>未绑定项目</span>
+    </div>
+    <div class="table">
+        <table>
+            <tr>
+                <td style="width:20%;">
+                    <span>编号</span>
+                </td>
+                <td style="width:20%;">
+                    <span>项目名称</span>
+                </td>
+                <td style="width:20%;">
+                    <span>施工单位</span>
+                </td>
+                <td style="width:20%;">
+                    <span>施工时间</span>
+                </td>
+                <td colspan="2" style="width:20%;">
+                    <span>操作</span>
+                </td>
+            </tr>
+            <tr ng-repeat="project in unBindProjectList">
+                <td>{{project.num}}</td>
+                <td>{{project.name}}</td>
+                <td>{{project.constructUnit}}</td>
+                <td>{{project.startDate}}</td>
+                <td ng-click="showProjectDetail(project)" class="can-click">
+                    <span><i class="fa fa-eye" aria-hidden="true"></i>查看</span>
+                </td>
+                <td ng-click="bindProject(project)" class="can-click">
+                    <span>
+                            <i class="fa fa-lock"></i>
+                        绑定
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="page-container">
+        <uib-pagination total-items="pagination2.totalItems" ng-model="pagination2.currentPage" max-size="pagination2.maxSize" first-text="第一页"
+            previous-text="上一页" next-text="下一页" last-text="最后页" boundary-links="true" boundary-link-numbers="true" items-per-page="pagination2.aPageNumber"
+            ng-change="pagination2.pageChange()" num-pages="pagination2.numPages"></uib-pagination>
+        <div class="choose-page">
+            <span>
+                            跳到第
+                        </span>
+            <input type="text" ng-model="pageData.page2">
+            <span>页</span>
+            <button class="btn btn-primary" ng-click="goToPage2()">确定</button>
+        </div>
+    </div>
+</div>

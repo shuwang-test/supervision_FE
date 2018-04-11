@@ -1,0 +1,39 @@
+<div class="detail-third-third">
+    <div class="line"></div>
+    <div class="menu">
+        <ul class="clear">
+            <li ng-class="{'active':detailThirdThirdMenu == 1}" ng-click="goToDetailThirdThirdMenu(1)">安全责任制</li>
+            <li ng-class="{'active':detailThirdThirdMenu == 2}" ng-click="goToDetailThirdThirdMenu(2)">安全制度详情</li>
+            <li ng-class="{'active':detailThirdThirdMenu == 3}" ng-click="goToDetailThirdThirdMenu(3)">安全措施状况</li>
+            <li ng-class="{'active':detailThirdThirdMenu == 4}" ng-click="goToDetailThirdThirdMenu(4)">安全检查状态</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="people">
+            <div>
+                <span>
+                            责任人：
+                        </span>
+                <span ng-show="!parentEditing">
+                            {{safetyManager.responsiblePerson}}
+                        </span>
+                <input type="text" ng-model="safetyManagerData.responsiblePerson" ng-show="parentEditing">
+            </div>
+            <div>
+                <span>
+                                法人：
+                            </span>
+                <span ng-show="!parentEditing">
+                                {{safetyManager.legalPerson}}
+                            </span>
+                <input type="text" ng-show="parentEditing" ng-model="safetyManagerData.legalPerson">
+            </div>
+            <div class="button">
+                <button class="btn btn-primary" ng-show="parentEditing" ng-click="cancelEditing()">取消</button>
+                <button class="btn btn-primary" ng-show="!parentEditing" ng-click="startEditing()">编辑</button>
+                <button class="btn btn-primary" ng-click="saveInfo()">保存</button>
+            </div>
+        </div>
+        <div class="detail-third-third-view" ui-view></div>
+    </div>
+</div>

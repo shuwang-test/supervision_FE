@@ -1,0 +1,85 @@
+<div class="setting-view-first">
+    <div class="menu">
+        <ul class="clear">
+            <li ng-click="startAddRole()">
+                <span class="fa fa-plus-circle"></span>
+                <span>添加角色</span>
+            </li>
+            <!-- <li ng-click="startBatchDelete()">
+                <span class="fa fa-trash-o"></span>
+                <span>
+                   批量删除
+                </span>
+            </li> -->
+            <!-- <li>
+                <input type="text" placeholder="请输入用户名">
+                <span class="fa fa-search"> </span>
+            </li> -->
+        </ul>
+    </div>
+    <div class="table">
+        <table style="width:50%;">
+            <tr class="title">
+                <!-- <td style="width:5%;">
+                    <input type="checkbox" ng-click="chooseAll($event)" ng-model="hasChooseAll">
+                </td> -->
+                <!-- <td style="width:5%;"></td> -->
+                <td style="width:60%;">角色名称</td>
+                <td colspan="2" style="width:40%;">操作</td>
+            </tr>
+            <tr ng-repeat="role in roleList">
+                <td>
+                    <span>{{role.name}}</span>
+                </td>
+                <td class="can-click">
+                    <span class="fa fa-pencil-square"></span>
+                    <span ng-click="startEditRole(role)">编辑</span>
+                </td>
+                <td class="can-click">
+                    <span class="fa fa-trash-o"></span>
+                    <span ng-click="startDeleteRole(role)">删除</span>
+                </td>
+            </tr>
+            <!-- <tr ng-repeat="operator in operatorList">
+                <td>
+                    <input type="checkbox" ng-model="operator.check">
+                </td>
+                <td>{{operator.index+1}}</td>
+                <td>
+                    <span>{{operator.realName}}</span>
+                </td>
+                <td>
+                    <span>{{operator.roleName}}</span>
+                </td>
+                <td class="can-click">
+                    <span class="fa fa-pencil-square"></span>
+                    <span ng-click="startEditOperator(operator)">编辑</span>
+                </td>
+                <td class="can-click">
+                    <span class="fa fa-trash-o"></span>
+                    <span ng-click="startDelete(operator)">删除</span>
+                </td>
+                <td class="can-click">
+                    <span class="fa fa-database"></span>
+                    <span ng-click="startBindProject(operator)">绑定项目</span>
+                </td>
+            </tr> -->
+        </table>
+    </div>
+
+
+
+    <!-- <div class="page-container">
+        <uib-pagination total-items="pagination.totalItems" ng-model="pagination.currentPage" max-size="pagination.maxSize" first-text="第一页"
+            previous-text="上一页" next-text="下一页" last-text="最后页" boundary-links="true" boundary-link-numbers="true" items-per-page="pagination.aPageNumber"
+            ng-change="pageChange()" num-pages="pagination.numPages"></uib-pagination>
+        <div class="choose-page">
+            <span>
+                        跳到第
+                    </span>
+            <input type="text" ng-model="goToPageData.page">
+            <span>页</span>
+            <button class="btn btn-primary" ng-click="goToPage()">确定</button>
+        </div>
+    </div> -->
+</div>

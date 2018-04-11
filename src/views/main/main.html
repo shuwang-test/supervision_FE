@@ -18,7 +18,7 @@
                     <div ng-click="startModifyPassword()">
                         修改密码
                     </div>
-                    <div ng-click="goToSetting()" ng-if="showSetting">
+                    <div ng-click="goToSetting()" ng-if="userHasPermission('系统管理')">
                         系统管理
                     </div>
                     <div ng-click="loginOut()">

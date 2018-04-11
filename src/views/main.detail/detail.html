@@ -1,0 +1,115 @@
+<div class="detail-container">
+    <div class="summary-title" ng-class="{'show-summary-info':showSummaryInfo}">
+        <div class="title" ng-click="showSummary()">
+            <div>
+                <span>
+                    项目概况
+                </span>
+                <span ng-show="!showSummaryInfo">
+                   ({{project.name}})
+                </span>
+                <span class="fa fa-angle-right">
+    
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="summary-detail" ng-class="{'show-summary-info':showSummaryInfo}">
+        <div>
+            <div class="group">
+                <div class="item">
+                    <span>项目名称：</span>
+                    <span>{{project.name}}</span>
+                </div>
+                <div class="item">
+                    <span>项目编号：</span>
+                    <span>{{project.num}}</span>
+                </div>
+                <div class="item">
+                    <span>项目负责人：</span>
+                    <span>{{project.principal}}</span>
+                </div>
+            </div>
+            <div class="group">
+                <div class="item">
+                    <span>建设主管单位：</span>
+                    <span>{{project.superviseUnit}}</span>
+                </div>
+                <div class="item">
+                    <span>建设地址：</span>
+                    <span>{{project.address}}</span>
+                </div>
+                <div class="item">
+                    <span>总投资额：</span>
+                    <span>{{project.sum}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+
+    </div>
+    <div class="detail">
+        <div class="menu">
+            <ul class="clear">
+                <li ng-click="go(1)" ng-class="{'active':currentMenu==1}" ng-if="userHasPermission('项目详情')">
+                    <div>
+                        <span> 项目详情 </span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(2)" ng-class="{'active':currentMenu==2}" ng-if="userHasPermission('前期阶段')">
+                    <div>
+                        <span>前期阶段</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(3)" ng-class="{'active':currentMenu==3}" ng-if="userHasPermission('现场状况')">
+                    <div>
+                        <span>现场状况</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(4)" ng-class="{'active':currentMenu==4}" ng-if="userHasPermission('项目进度')">
+                    <div>
+                        <span>项目进度</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(5)" ng-class="{'active':currentMenu==5}" ng-if="userHasPermission('联系单')">
+                    <div>
+                        <span>联系单</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(6)" ng-class="{'active':currentMenu==6}" ng-if="userHasPermission('审计及结算')">
+                    <div>
+                        <span>审计及结算</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(7)" ng-class="{'active':currentMenu==7}" ng-if="userHasPermission('支付管理')">
+                    <div>
+                        <span>支付管理</span>
+                        <span></span>
+                    </div>
+                </li>
+                <li ng-click="go(8)" ng-class="{'active':currentMenu==8}" ng-if="userHasPermission('操作记录')">
+                    <div>
+                        <span>操作记录</span>
+                        <span></span>
+                    </div>
+                </li>
+                <!-- <li ng-click="go(menu)" ng-class="{'active':currentMenu==$index+1}" ng-repeat="menu in menuList">
+                    <div>
+                        <span> {{menu.name}} </span>
+                        <span></span>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div ui-view class="detail-view">
+
+        </div>
+    </div>
+</div>

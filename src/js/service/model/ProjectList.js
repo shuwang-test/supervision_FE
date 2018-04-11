@@ -1,6 +1,6 @@
 ;(function() {
 	'use strict'
-	angular.module('app').factory('ProjectList', function(Http) {
+	angular.module('app').factory('ProjectList', function(Http, toastr) {
 		var getProjectList = function(search, pageSize, pageCurrent) {
 			var options = {
 				search: search,

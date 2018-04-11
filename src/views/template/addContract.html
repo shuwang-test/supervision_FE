@@ -1,0 +1,35 @@
+<div>
+    <div class="title">
+        新建合同
+    </div>
+    <div class="content">
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <label>创建者：</label>
+                <input type="text" class="form-control" ng-model="user.realName" disabled>
+            </div>
+            <div class="form-group" style="visibility: hidden"></div>
+            <div class="form-group">
+                <label>合同名称：</label>
+                <input type="text" class="form-control" placeholder="请输入合同名称" ng-model="contractData.name">
+            </div>
+            <div class="form-group">
+                <label>合同编号：</label>
+                <input type="text" class="form-control" placeholder="请输入合同编号" ng-model="contractData.num">
+            </div>
+            <div class="form-group">
+                <label>合同金额：</label>
+                <input type="text" class="form-control" placeholder="请输入合同金额" ng-model="contractData.sum">
+            </div>
+            <div class="form-group">
+                <label>合同类型：</label>
+                <select class="form-control" ng-model="contractData.type" ng-options="contractType.title for contractType in contractTypeList">
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="button">
+        <button class="btn btn-primary btn-two" ng-click="ensureCreateContract()">确定</button>
+        <button class="btn btn-primary btn-two" ng-click="closeCreateContract()">取消</button>
+    </div>
+</div>

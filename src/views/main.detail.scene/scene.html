@@ -1,0 +1,19 @@
+<div class="scene-container">
+    <div class="menu">
+        <ul class="clear">
+            <li ng-class="{'active':detailThirdMenu == 1}" ng-click="goToDetailThirdMenu(1)">
+                <span>人员出勤状况</span>
+                <span class="fa fa-caret-down"></span>
+            </li>
+            <li ng-class="{'active':detailThirdMenu == 2}" ng-click="goToDetailThirdMenu(2)">
+                <span> 监管状况</span>
+            </li>
+            <li ng-class="{'active':detailThirdMenu == 3}" ng-click="goToDetailThirdMenu(3)">
+                <span>安全状况</span>
+            </li>
+        </ul>
+    </div>
+    <div ui-view class="detail-third-view">
+
+    </div>
+</div>

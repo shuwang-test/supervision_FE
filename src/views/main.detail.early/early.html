@@ -1,0 +1,28 @@
+<div class="early-container">
+    <div class="menu">
+        <ul class="clear" menu-left>
+            <span class="fa fa-caret-down" flag-left></span>
+            <li ng-class="{'active':earlyCurrentMenu == 1}" ng-click="go(1)" ng-if="userHasPermission('项目立项书')">
+                <span>项目立项书</span>
+            </li>
+            <li ng-class="{'active':earlyCurrentMenu == 2}" ng-click="go(2)" ng-if="userHasPermission('可研报告')">
+                <span> 可研报告</span>
+            </li>
+            <li ng-class="{'active':earlyCurrentMenu == 3}" ng-click="go(3)" ng-if="userHasPermission('初步设计方案及审批')">
+                <span>初步设计方案及审批</span>
+            </li>
+            <li ng-class="{'active':earlyCurrentMenu == 4}" ng-click="go(4)" ng-if="userHasPermission('施工方案及审批')">
+                <span>施工方案及审批</span>
+            </li>
+            <li ng-class="{'active':earlyCurrentMenu == 5}" ng-click="go(5)" ng-if="userHasPermission('规划许可证')">
+                <span>规划许可证</span>
+            </li>
+            <li ng-class="{'active':earlyCurrentMenu == 6}" ng-click="go(6)" ng-if="userHasPermission('施工许可证')">
+                <span>施工许可证</span>
+            </li>
+        </ul>
+    </div>
+    <div ui-view class="detail-second-view">
+
+    </div>
+</div>

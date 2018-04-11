@@ -3,7 +3,7 @@
 	angular.module('app').config(function($stateProvider) {
 		$stateProvider.state('main.list', {
 			url: '/list',
-			templateUrl: 'views/list/list.html',
+			templateUrl: 'views/main.list/list.html',
 			controller: 'listCtrl'
 		})
 	})

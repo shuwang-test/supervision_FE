@@ -1,0 +1,13 @@
+<div class="supervision-container">
+    <div class="menu">
+        <span class="btn btn-primary" ng-click="chooseMode(1)">
+            现场视频
+       </span>
+        <span class="btn btn-primary" ng-click="chooseMode(2)">
+           录像回放
+       </span>
+    </div>
+    <div class="iframe-container">
+        <iframe ng-src="{{frameSrc | trusted}}" frameborder="0"></iframe>
+    </div>
+</div>

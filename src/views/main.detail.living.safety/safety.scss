@@ -1,0 +1,98 @@
+$line-height: 2px;
+$menu-width: 10%;
+
+div.detail-third-third {
+	position: relative;
+	height: 100%;
+	background-color: #e6e7e8;
+	font-size: 16px;
+	> div.line {
+		height: $line-height;
+		background-color: #f7f8fa;
+	}
+	> div.menu {
+		position: absolute;
+		left: 0;
+		top: $line-height;
+		width: $menu-width;
+		height: 100%;
+		background-color: #f7f8fa;
+		text-align: center;
+		> ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			> li {
+				height: 35px;
+				line-height: 35px;
+				color: #333333;
+				background-color: #ffffff;
+				border-bottom: 1px solid #cccccc;
+				cursor: pointer;
+				&.active {
+					background-color: #e6e7e8;
+					color: #219cea;
+				}
+			}
+		}
+	}
+	> div.content {
+		position: absolute;
+		left: $menu-width;
+		top: $line-height;
+		width: 100%-$menu-width;
+		height: 100%;
+		overflow: auto;
+		> div.people {
+			padding: 10px 0 10px 0;
+			position: relative;
+			border-bottom: 1px solid #ccc;
+			> div {
+				display: inline-block;
+				width: 40%;
+				text-align: center;
+				position: relative;
+				z-index: 999;
+				> span {
+					display: inline-block;
+					vertical-align: middle;
+					&:nth-child(1) {
+						width: 30%;
+						text-align: right;
+					}
+					&:nth-child(2) {
+						width: 65%;
+						padding-left: 20px;
+						height: 32px;
+						line-height: 32px;
+						border: 1px solid rgba(187, 187, 187, 1);
+						background-color: #ffffff;
+						text-align: left;
+					}
+				}
+				> input {
+					display: inline-block;
+					vertical-align: middle;
+					width: 65%;
+					padding-left: 20px;
+					height: 32px;
+					line-height: 32px;
+					border: 1px solid rgba(187, 187, 187, 1);
+					background-color: #ffffff;
+					text-align: left;
+				}
+			}
+			> div.button {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				z-index: 100;
+				padding-right: 6%;
+				text-align: right;
+				> button {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

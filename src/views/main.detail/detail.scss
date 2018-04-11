@@ -1,0 +1,149 @@
+div.detail-container {
+	height: 100%;
+	background: #f7f8fa;
+	> div.summary-title {
+		background-color: #e6e7e8;
+		position: relative;
+		height: 5%;
+		> div.title {
+			position: relative;
+			font-size: 20px;
+			height: 100%;
+			cursor: pointer;
+			> div {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				padding-left: 50px;
+				> span:first-child {
+					color: #f6b002;
+				}
+				> span.fa {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 30px;
+					font-size: 25px;
+					transition: all 0.3s ease;
+				}
+			}
+		}
+		&.show-summary-info {
+			> div.title {
+				> div {
+					> span.fa {
+						transform: translateY(-50%) rotate(90deg);
+					}
+				}
+			}
+		}
+	}
+	> div.summary-detail {
+		background-color: #f7f8fa;
+		transition: all 0.3s ease;
+		height: 0;
+		overflow: hidden;
+		position: relative;
+		> div {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 100%;
+			height: 68px;
+			> div.group {
+				padding: 2px 50px;
+				> div.item {
+					width: 30%;
+					display: inline-block;
+					font-size: 16px;
+					&:nth-child(2) {
+						width: 38%;
+					}
+					> span:first-child {
+						text-align: right;
+						width: 30%;
+						vertical-align: middle;
+					}
+					> span:last-child {
+						width: 68%;
+						text-align: left;
+						outline: 1px solid rgba(187, 187, 187, 1);
+						padding-left: 10px;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						overflow: hidden;
+						vertical-align: middle;
+					}
+					> span {
+						display: inline-block;
+						height: 30px;
+						line-height: 30px;
+						border-radius: 4px;
+					}
+				}
+			}
+		}
+		&.show-summary-info {
+			height: 10%;
+		}
+	}
+	div.line {
+		height: 2px;
+	}
+	> div.detail {
+		height: 95%;
+		background-color: #f7f8fa;
+		> div.menu {
+			height: 6%;
+			padding-left: 50px;
+			background-color: #e6e7e8;
+			ul {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				li {
+					list-style: none;
+					float: left;
+					font-size: 18px;
+					height: 100%;
+					position: relative;
+					width: 120px;
+					text-align: center;
+					cursor: pointer;
+					&.active {
+						color: #219cea;
+					}
+					> div {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 120px;
+						height: 28px;
+						line-height: 28px;
+						> span {
+							vertical-align: middle;
+						}
+						> span:first-child {
+							width: 100px;
+						}
+						> span:last-child {
+							display: inline-block;
+							width: 1px;
+							height: 28px;
+							background-color: #bbbbbb;
+							transform: rotate(21deg);
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+		> div.second-view {
+			height: 94%;
+		}
+	}
+}

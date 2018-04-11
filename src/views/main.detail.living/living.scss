@@ -1,0 +1,46 @@
+$menu-height: 6%;
+
+div.detail-third {
+	height: 100%;
+	background: #f7f8fa;
+	> div.menu {
+		background-color: #e6e7e8;
+		padding: 5px 0;
+		height: $menu-height;
+		position: relative;
+		> ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			> span.fa {
+				position: absolute;
+				top: -23px;
+				left: 215px;
+				font-size: 35px;
+				color: #219cea;
+				transform: rotate(-180deg);
+			}
+			> li {
+				background-color: #9ed2f0;
+				color: #ffffff;
+				height: 25px;
+				line-height: 25px;
+				float: left;
+				text-align: center;
+				padding: 0px 8px;
+				border-right: 1px solid #ffffff;
+				position: relative;
+				cursor: pointer;
+				&.active {
+					background-color: #219cea;
+				}
+			}
+		}
+	}
+	> div.detail-third-view {
+		height: 100%-$menu-height;
+	}
+}

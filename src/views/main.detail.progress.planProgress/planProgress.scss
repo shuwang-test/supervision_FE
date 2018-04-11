@@ -1,0 +1,71 @@
+div.plan-progress-container {
+	padding-top: 10px;
+	> table {
+		margin: 0 auto;
+		width: 1200px;
+		text-align: center;
+		font-size: 16px;
+		tr {
+			td {
+				padding: 2px 0;
+				border: 1px solid #cccccc;
+			}
+		}
+		tr.menu {
+			td {
+				background-color: #219cea;
+				padding: 5px 0;
+				color: #fff;
+				font-size: 20px;
+			}
+		}
+		tr.item {
+			td {
+				> span {
+					display: inline-block;
+					vertical-align: middle;
+					height: 30px;
+					line-height: 30px;
+				}
+				> input {
+					width: 160px;
+					height: 30px;
+					line-height: 30px;
+					border-radius: 4px;
+					border: 1px solid #ccc;
+					padding-left: 20px;
+				}
+				> input:focus {
+					outline: none;
+					border: 1px solid #ecec;
+				}
+				> div {
+					display: inline-block;
+					vertical-align: middle;
+				}
+				> button {
+					vertical-align: middle;
+				}
+			}
+			td.add-container {
+				position: relative;
+				> span.fa {
+					position: absolute;
+					right: 30px;
+					cursor: pointer;
+					display: none;
+				}
+			}
+			td.add-container:hover {
+				> span.fa {
+					display: inline-block;
+				}
+			}
+			td.operate {
+				> span {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

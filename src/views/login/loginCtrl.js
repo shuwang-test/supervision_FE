@@ -8,7 +8,9 @@
 		localStorageService,
 		Util,
 		Http,
-		Constant
+		Constant,
+		MenuList,
+		Permission
 	) {
 		$scope.login = login
 		$scope.loginStatus = '登录'
@@ -31,11 +33,7 @@
 					handle: hanldleLogin,
 					handleError: handleLoginError
 				}
-				Http.login(options).then(function(res) {
-					if (res) {
-						$state.go('main.list')
-					}
-				})
+				Http.login(options)
 			}
 		}
 		function hanldleLogin(res) {
@@ -47,6 +45,26 @@
 					Constant.localStorageExpireTime
 				)
 				localStorageService.set('token', res.data.data.token)
+				var options = {
+					content: encodeURI(
+						JSON.stringify({
+							id: localStorageService.get('user').id,
+							idType: 1
+						})
+					)
+				}
+				Http.getPermissionList(options).then(function(res) {
+					if (res) {
+						var menuList = res.data.data.powerList
+						var firstMenuList = MenuList.getFirstMenuList(menuList)
+						var permissionList = Permission.getPermissionList(
+							firstMenuList
+						)
+						Permission.setPermissionList(permissionList)
+						console.log('permissionList', permissionList)
+						$state.go('main.list')
+					}
+				})
 			} else {
 				toastr.error(res.data.message)
 			}

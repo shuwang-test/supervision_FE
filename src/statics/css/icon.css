@@ -1,0 +1,2775 @@
+/*
+ *
+ */
+
+[class^="data-base-"],
+[class*=" data-base-"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("images/icon_base.png") !important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+/*添加*/
+
+.data-base-add {
+    background-position: -20px -20px;
+}
+/*复制*/
+.data-base-copy{
+    background-position: -593px -99px;
+}
+/*修改*/
+
+.data-base-edit {
+    background-position: -46px -20px;
+}
+/*删除*/
+
+.data-base-remove {
+    background-position: -72px -20px;
+}
+/*红色删除*/
+.data-base-red-remove {
+    background-position: -386px -46px;
+}
+/*why*/
+/*区域元素移动*/
+
+.data-base-move {
+    background-position: -254px -176px;
+}
+/*批量开卡*/
+
+.data-base-batchcardopen {
+    background-position: -72px -176px;
+}
+/*身份管理*/
+
+.data-base-identity-management {
+    background-position: -98px -176px;
+}
+/*导入照片*/
+
+.data-base-import-photo {
+    background-position: -124px -176px;
+}
+/*why end*/
+/*清空*/
+
+.data-base-empty {
+    background-position: -98px -20px;
+}
+/*添加控制中心*/
+
+.data-base-add-unit {
+    background-position: -150px -20px;
+}
+/*添加区域*/
+
+.data-base-add-region {
+    background-position: -176px -20px;
+}
+.data-base-add-disable-region {
+    background-position: -20px -282px;
+}
+/*添加区域*/
+
+.data-base-home-down {
+    background-position: -124px -202px;
+    ;
+}
+/*关闭大红叉*/
+
+.data-base-red-big-close {
+    background-position: -386px -46px;
+}
+/*向下双箭头*/
+
+.data-base-double-down {
+    background-position: -618px -46px;
+}
+/*向上双箭头*/
+
+.data-base-double-up {
+    background-position: -644px -46px;
+}
+/*向下单箭头*/
+
+.data-base-single-down {
+    background-position: -618px -72px;
+}
+/*向上单箭头*/
+
+.data-base-single-up {
+    background-position: -644px -72px;
+}
+/*向下黑箭头*/
+.data-base-single-black-down{
+  background-position: -124px -98px;
+}
+
+/*向下黑箭头*/
+.data-base-img-active{
+  background-position: -358px -98px;
+}
+/*向下红箭头*/
+.data-base-red-down{
+  background-position: -436px -46px;
+}
+
+/*向下单直线箭头*/
+.data-base-single-line-down{
+    background-position: -283px -284px;
+}
+/*向上单直线箭头*/
+.data-base-single-line-up{
+    background-position: -204px -284px;
+}
+
+/*why*/
+/*批量导入*/
+
+.data-base-loadin {
+    background-position: -280px -176px;
+}
+/*批量导入*/
+
+.data-base-loadin {
+    background-position: -280px -176px;
+}
+
+/*明文显示*/
+
+.data-base-pwdLook {
+    background-position: -517px -284px;
+}
+.data-base-pwdLook:visited {
+    background-position: -569px -284px;
+}
+.data-base-pwdLook:hover {
+    background-position: -543px -284px;
+}
+
+/*明文不显示*/
+
+.data-base-pwdUnlook {
+    background-position: -595px -284px;
+}
+.data-base-pwdUnlook:visited {
+    background-position: -569px -284px;
+}
+.data-base-pwdUnlook:hover {
+    background-position: -647px -284px;
+}
+
+/*写卡*/
+
+.data-base-write-card {
+    background-position: -592px -150px;
+}
+/*批量退卡*/
+
+.data-base-batchcardclose {
+    background-position: -618px -150px;
+}
+/*批量挂失*/
+
+.data-base-bat-loss {
+    background-position: -20px -176px;
+}
+/*批量解挂*/
+
+.data-base-bat-solutions {
+    background-position: -46px -176px;
+}
+/*why end*/
+/*why*/
+/*参数设置*/
+
+.data-base-search {
+    background-position: -20px -150px;
+}
+/*框选*/
+.data-base-alarmLocation{
+    background-position: -517px -285px;
+}
+/*定位*/
+.data-base-alarmLocation-close{
+    background-position: -595px -284px;
+}
+/*关闭定位*/
+.data-base-select {
+    background-position: -332px -176px;
+}
+/*漫游*/
+
+.data-base-roam {
+    background-position: -306px -176px;
+}
+/*对齐*/
+
+.data-base-align {
+    background-position: -228px -150px;
+}
+/*工具*/
+
+.data-base-tool {
+    background-position: -228px -176px;
+}
+/*全屏*/
+
+.data-base-full-screen {
+    background-position: -332px -176px;
+}
+/*显示*/
+
+.data-base-show {
+    background-position: -46px -150px;
+}
+/*左对齐*/
+
+.data-base-alginLeft {
+    background-position: -254px -150px;
+}
+/*右对齐*/
+
+.data-base-alginRight {
+    background-position: -280px -150px;
+}
+/*顶对齐*/
+
+.data-base-alginTop {
+    background-position: -306px -150px;
+}
+/*底对齐*/
+
+.data-base-alginBottom {
+    background-position: -332px -150px;
+}
+/*水平对齐*/
+
+.data-base-level {
+    background-position: -358px -150px;
+}
+/*垂直对齐*/
+
+.data-base-vertical {
+    background-position: -384px -150px;
+}
+/*截图*/
+
+.data-base-screenShot {
+    background-position: -124px -150px;
+}
+/*地图链接*/
+
+.data-base-mapLink {
+    background-position: -150px -150px;
+}
+/*标记*/
+
+.data-base-marker {
+    background-position: -176px -150px;
+}
+/*收藏夹*/
+
+.data-base-favorite {
+    background-position: -462px -150px;
+}
+/*轨迹回放*/
+
+.data-base-trackBack {
+    background-position: -436px -150px;
+}
+/*退出全屏*/
+
+.data-base-out-full-screen {
+    background-position: -384px -176px;
+}
+/*测距*/
+
+.data-base-distance {
+    background-position: -358px -176px;
+}
+/*选项*/
+
+.data-base-choose {
+    background-position: -202px -176px;
+}
+
+.data-base-redEmpty {
+    background-position: -410px -176px;
+}
+
+.data-base-rightArrows {
+    background-position: -488px -98px;
+}
+/*why end*/
+/*导出按钮*/
+
+.data-base-export {
+    background-position: -592px -46px;
+}
+/*关闭小红叉*/
+
+.data-base-red-small-close {
+    background-position: -386px -72px;
+}
+/*远程配置*/
+
+.data-base-remote {
+    background-position: -202px -72px;
+}
+/*远程配置失效*/
+
+.data-base-remote-disabled {
+    background-position: -228px -72px;
+}
+/*警告*/
+
+.data-base-warning {
+    background-position: -488px -72px;
+}
+/*分享*/
+
+.data-base-share {
+    background-position: -460px -72px;
+}
+/*远程获取*/
+
+.data-base-remoteRev {
+    background-position: -568px -72px;
+}
+/*复制*/
+
+.data-base-copy {
+    background-position: -516px -72px;
+}
+/*刷新*/
+
+.data-base-refrash {
+    background-position: -98px -98px;
+}
+/*在线侦测*/
+
+.data-base-monitor {
+    background-position: -123px -98px;
+}
+/*图标显示*/
+
+.data-base-pictrue-list {
+    background-position: -202px -98px;
+}
+/*图标显示 灰色
+.data-base-pictrue-list:hover, .data-base-pictrue-list:focus, .data-base-pictrue-list:active{
+  background-position: -228px -98px;
+}*/
+/*列表显示*/
+
+.data-base-grid-list {
+    background-position: -282px -98px;
+}
+/*列表显示 灰色
+.data-base-grid-list:hover, .data-base-grid-list:focus, .data-base-grid-list:active{
+  background-position: -256px -98px;
+}*/
+/*首页*/
+
+.data-base-home {
+    background-position: -20px -202px;
+}
+/*用户*/
+
+.data-base-user {
+    background-position: -46px -202px;
+}
+/*版权*/
+
+.data-base-version {
+    background-position: -72px -202px;
+}
+/*帮助*/
+
+.data-base-help {
+    background-position: -98px -124px;
+}
+/* 用户文档 */
+.data-base-userguide {
+    background-position: -514px -202px;
+}
+/*下载*/
+.data-base-download {
+    background-position: -98px -202px;
+}
+/*下载*/
+.data-base-download-black {
+    background-position: -124px -124px;
+}
+/*下载*/
+.data-base-download-icon {
+    background-position: -566px -72px;
+}
+
+/* 手机 */
+.data-base-phone {
+    background-position: -280px -229px;
+}
+/* 手机hover */
+.data-base-phone-hover {
+    background-position: -306px -229px;
+}
+
+/* 上传 */
+.data-base-upload-white {
+    background-position: -332px -229px;
+}
+
+/* 下载 */
+.data-base-down {
+    background-position: -358px -229px;
+}
+/* 下载hover */
+.data-base-down-hover {
+    background-position: -384px -229px;
+}
+/* 下载select */
+.data-base-down-selected {
+    background-position: -410px -229px;
+}
+
+/* 配置 */
+.data-base-config {
+    background-position: -437px -229px;
+}
+/* 配置hover */
+.data-base-config-hover {
+    background-position: -463px -229px;
+}
+/* 配置selected */
+.data-base-config-selected {
+    background-position: -489px -229px;
+}
+
+
+/*退出*/
+
+.data-base-logoutDark {
+    background-position: -150px -124px;
+}
+
+
+/*退出*/
+
+.data-base-logout {
+    background-position: -124px -202px;
+}
+/*成功*/
+
+.data-base-correct {
+    background-position: -592px -72px;
+}
+/*指定下载*/
+.data-base-specify-download {
+    background-position: -279px -202px;;
+}
+/*变更下载*/
+.data-base-change-download {
+    background-position: -305px -202px;;
+}
+/*信息下发*/
+.data-base-info-issued {
+    background-position: -330px -202px;
+}
+/*下发详情*/
+.data-base-issued-detail {
+    background-position: -358px -202px;
+}
+/*网域配置*/
+.data-base-domain-config {
+    background-position: -384px -202px;
+}
+/*返回*/
+.data-base-goback {
+    background-position: -410px -202px;
+}
+/*实时定位*/
+.data-base-pos {
+    background-position: -436px -202px;
+}
+
+
+/*基础应用*/
+.data-base-base {
+    background-position: -150px -230px;
+}
+
+/*门禁子系统*/
+.data-base-acs {
+    background-position: -203px -230px;
+}
+
+/*梯控*/
+.data-base-ecs {
+    background-position: -47px -284px;
+}
+
+/*视频系统*/
+.data-base-vss {
+    background-position: -229px -230px;
+}
+
+/*事件中心*/
+.data-base-eps {
+    background-position: -47px -230px;
+}
+
+/*电子地图*/
+.data-base-ems {
+    background-position: -20px -230px;
+}
+
+/*移动接入子系统*/
+/*.data-base-msp {
+    background-position: -436px -230px;
+}*/
+
+/*入侵报警*/
+.data-base-ias {
+    background-position: -256px -230px;
+}
+
+/*可视对讲*/
+.data-base-vis {
+    background-position: -98px -230px;
+}
+
+/*停车场*/
+.data-base-pms {
+    background-position: -176px -230px;
+}
+
+/*网络管理*/
+.data-base-coms {
+    background-position: -124px -230px;
+}
+
+/*考勤管理*/
+.data-base-att {
+    background-position: -73px -230px;
+}
+/*巡查管理*/
+.data-base-ops {
+    background-position: -516px -230px;
+}
+/*访客*/
+.data-base-rvs {
+    background-position: -541px -230px;
+}
+/*消费*/
+.data-base-ccs {
+    background-position: -153px -284px;
+}
+/*动环子系统*/
+.data-base-pems {
+    background-position: -179px -284px;
+}
+
+/*
+ *
+ */
+
+[class^="data-cms2-"],
+[class*=" data-cms2-"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("images/icon16.png") !important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+/*基础应用*/
+
+.data-cms2-basis {
+    background-position: -20px -20px;
+}
+/*综合应用*/
+
+.data-cms2-complex {
+    background-position: -46px -20px;
+}
+/*产品应用*/
+
+.data-cms2-product {
+    background-position: -72px -20px;
+}
+/*联动事件模板*/
+
+.data-cms2-event-linkage {
+    background-position: -98px -20px;
+}
+/*服务器管理*/
+
+.data-cms2-server,
+.data-cms2-server_ico_open,
+.data-cms2-server_ico_close,
+.data-cms2-server_ico_docu {
+    background-position: -124px -20px;
+}
+/*事件规则配置*/
+
+.data-cms2-event-rule {
+    background-position: -150px -20px;
+}
+/*事件查询*/
+
+.data-cms2-event-query {
+    background-position: -176px -20px;
+}
+/*事件查询*/
+
+.data-cms2-alarm {
+    background-position: -228px -20px;
+}
+/*关联*/
+
+.data-cms2-relation {
+    background-position: -280px -20px;
+}
+/*组织机构*/
+
+.data-cms2-unit {
+    background-position: -358px -20px;
+}
+/*硬件设备管理*/
+
+.data-cms2-hardware {
+    background-position: -384px -20px;
+}
+/*参数设置*/
+
+.data-cms2-config {
+    background-position: -410px -20px;
+}
+/*参数设置*/
+
+.data-cms2-record-plan {
+    background-position: -436px -20px;
+}
+/*参数设置*/
+
+.data-cms2-steamUrl {
+    background-position: -462px -20px;
+}
+/*主机图标名称*/
+
+.data-cms2-iasdevice,
+.data-cms2-iasdevice_ico_open,
+.data-icon-iasdevice_ico_open,
+.data-cms2-iasdevice_ico_close,
+.data-cms2-iasdevice_ico_docu {
+    background-position: -592px -46px;
+}
+/*子系统图标名称*/
+
+.data-cms2-iassubsystem,
+.data-cms2-iassubsystem_ico_open,
+.data-cms2-iassubsystem_ico_close,
+.data-cms2-iassubsystem_ico_docu {
+    background-position: -618px -46px;
+}
+/*参数设置*/
+
+.data-cms2-per {
+    background-position: -645px -46px;
+}
+/*参数设置*/
+
+.data-cms2-history {
+    background-position: -21px -72px;
+}
+/*参数设置*/
+
+.data-cms2-search {
+    background-position: -46px -72px;
+}
+/*参数设置*/
+
+.data-cms2-local,
+.data-cms2-local_ico_open,
+.data-cms2-local_ico_close,
+.data-cms2-local_ico_docu {
+    background-position: -71px -72px;
+}
+/*参数设置*/
+
+.data-cms2-photo {
+    background-position: -98px -72px;
+}
+/*参数设置*/
+
+.data-cms2-pc {
+    background-position: -124px -72px;
+}
+/*参数设置*/
+
+.data-cms2-train {
+    background-position: -149px -72px;
+}
+/*参数设置*/
+
+.data-cms2-car ,
+.data-cms2-car_ico_open,
+.data-cms2-car_ico_close,
+.data-cms2-car_ico_docu {
+    background-position: -175px -72px;
+}
+/*参数设置*/
+
+.data-cms2-meter {
+    background-position: -202px -72px;
+}
+/*参数设置*/
+
+.data-cms2-tix {
+    background-position: -228px -72px;
+}
+/*参数设置*/
+
+.data-cms2-sheet {
+    background-position: -254px -72px;
+}
+/*参数设置*/
+
+.data-cms2-park {
+    background-position: -280px -72px;
+}
+/*事件中心小图标*/
+/*io事件*/
+
+.data-cms2-vss-io_ico_close,
+.data-cms2-vss-io_ico_open {
+    background-position: -306px -72px;
+}
+/*普通事件*/
+
+.data-cms2-vss-common_ico_close,
+.data-cms2-vss-common_ico_open {
+    background-position: -332px -72px;
+}
+/*智能事件*/
+
+.data-cms2-vss-camera_ico_close,
+.data-cms2-vss-camera_ico_open {
+    background-position: -358px -72px;
+}
+
+.data-cms2-icon-env-channel_close,
+.data-cms2-icon-env-channel_open {
+    background-position: -384px -72px;
+}
+
+[class^="data-cms2-48-"],
+[class*=" data-cms2-48-"] {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 2px;
+    line-height: 16px;
+    cursor: pointer;
+    vertical-align: text-top;
+    background-image: url("images/icon48.png") !important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+/*添加*/
+
+.data-cms2-48-add {
+    background-position: -242px -68px;
+}
+
+.data-cms2-48-add:hover {
+    background-position: -300px -68px;
+}
+/*
+ * cms 1.5 老图标
+ */
+
+[class^="data-icon-"],
+[class*=" data-icon-"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("images/icon1.png") !important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+/******************树形特定图标**************/
+
+.ztree li span.button.ico_docu[name^='user_'] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("images/icon1.png") !important;
+    background-position: -12px -96px;
+    background-repeat: no-repeat;
+}
+
+.ztree li span.button.ico_open[name^='org_'],
+.ztree li span.button.ico_close[name^='org_'],
+.ztree li span.button.ico_docu[name^='org_'] {
+    background-position: -292px -68px;
+}
+
+.ztree.org-icon li span.button.ico_open,
+.ztree.org-icon li span.button.ico_close,
+.ztree.org-icon li span.button.ico_docu {
+    background-position: -292px -68px !important;
+    background-image: url("images/icon1.png") !important;
+}
+
+.ztree li span.button[name^='org_'],
+.ztree.org-icon .ico_docu {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("images/icon1.png") !important;
+    background-repeat: no-repeat;
+}
+/* 1 */
+/*添加*/
+
+.data-icon-add {
+    background-position: -12px -12px;
+}
+/*修改*/
+
+.data-icon-edit {
+    background-position: -40px -12px;
+}
+
+/*抓拍源配置*/
+.data-icon-photosource {
+    background-position: -180px -322px;
+}
+/*人脸名单配置*/
+.data-icon-facelist {
+    background-position: -151px -322px;
+}
+/*历史查询*/
+.data-icon-historysearch {
+    background-position: -95px -322px;
+}
+/*人脸检索*/
+.data-icon-facesearch {
+    background-position: -124px -322px;
+}
+/*性别统计图*/
+.data-icon-sex {
+    background-position: -40px -322px;
+}
+/*年龄统计图*/
+.data-icon-age {
+    background-position: -68px -322px;
+}
+/* 人脸库 */
+.data-icon-faceDb,
+.data-icon-faceDb_ico_open,
+.data-icon-faceDb_ico_close,
+.data-icon-faceDb_ico_docu {
+    background-position: -208px -322px;
+}
+/* 名单分组库 */
+.data-icon-roster,
+.data-icon-roster_ico_open,
+.data-icon-roster_ico_close,
+.data-icon-roster_ico_docu {
+    background-position: -236px -322px;
+}
+.data-icon-ecsdevice,
+.data-icon-ecsdevice_ico_open,
+.data-icon-ecsdevice_ico_close,
+.data-icon-ecsdevice_ico_docu {
+    background-position: -264px -180px;
+}
+
+.data-icon-ecsdevice,
+.data-icon-ecsdevice_ico_open,
+.data-icon-ecsdevice_ico_close,
+.data-icon-ecsdevice_ico_docu {
+    background-position: -264px -180px;
+}
+/*门口机*/
+
+.data-icon-outdoor,
+.data-icon-outdoor_ico_open,
+.data-icon-outdoor_ico_close,
+.data-icon-outdoor_ico_docu {
+    background-position: -403px -291px;
+}
+/*管理机*/
+
+.data-icon-managerdoor,
+.data-icon-managerdoor_ico_open,
+.data-icon-managerdoor_ico_close,
+.data-icon-managerdoor_ico_docu {
+    background-position: -376px -292px;
+}
+/*室内机*/
+
+.data-icon-indoor,
+.data-icon-indoor_ico_open,
+.data-icon-indoor_ico_close,
+.data-icon-indoor_ico_docu {
+    background-position: -432px -292px;
+}
+
+/*删除*/
+
+.data-icon-remove {
+    background-position: -68px -12px;
+}
+
+/*删除*/
+
+.data-icon-clear {
+    background-position: -404px -40px;
+}
+/*在线检测*/
+
+.data-icon-signal {
+    background-position: -96px -12px;
+}
+/*流媒体级联*/
+
+.data-icon-smscascade {
+    background-position: -124px -12px;
+}
+/*地图图标*/
+
+.data-icon-emap,
+.data-icon-emap_ico_open,
+.data-icon-emap_ico_close,
+.data-icon-emap_ico_docu {
+    background-position: -152px -124px;
+}
+/*设备存储*/
+
+.data-icon-device-store,
+.data-icon-device-store_ico_open,
+.data-icon-device-store_ico_close,
+.data-icon-device-store_ico_docu {
+    background-position: -180px -124px;
+}
+/*nvr存储*/
+
+.data-icon-nvr-store,
+.data-icon-nvr-store_ico_open,
+.data-icon-nvr-store_ico_close,
+.data-icon-nvr-store_ico_docu {
+    background-position: -208px -124px;
+}
+/*pcnvr存储*/
+
+.data-icon-pcnvr-store,
+.data-icon-pcnvr-store_ico_open,
+.data-icon-pcnvr-store_ico_close,
+.data-icon-pcnvr-store_ico_docu {
+    background-position: -236px -124px;
+}
+/*cvr存储*/
+
+.data-icon-cvr-store,
+.data-icon-cvr-store_ico_open,
+.data-icon-cvr-store_ico_close,
+.data-icon-cvr-store_ico_docu {
+    background-position: -264px -124px;
+}
+/*cvm存储*/
+
+.data-icon-cvm-store,
+.data-icon-cvm-store_ico_open,
+.data-icon-cvm-store_ico_close,
+.data-icon-cvm-store_ico_docu {
+    background-position: -348px -292px;
+}
+/*批量配置*/
+
+.data-icon-bat-config,
+.data-icon-bat-config_ico_open,
+.data-icon-bat-config_ico_close,
+.data-icon-bat-config_ico_docu {
+    background-position: -292px -124px;
+}
+/*报警参数复制*/
+
+.data-icon-alarm-config-copy,
+.data-icon-alarm-config-copy_ico_open,
+.data-icon-alarm-config-copy_ico_close,
+.data-icon-alarm-config-copy_ico_docu {
+    background-position: -320px -124px;
+}
+/*批量挂失*/
+
+.data-icon-bat-loss,
+.data-icon-bat-loss_ico_open,
+.data-icon-bat-loss_ico_close,
+.data-icon-bat-loss_ico_docu {
+    background-position: -348px -124px;
+}
+/*批量解挂*/
+
+.data-icon-bat-solutions,
+.data-icon-bat-solutions_ico_open,
+.data-icon-bat-solutions_ico_close,
+.data-icon-bat-solutions_ico_docu {
+    background-position: -376px -124px;
+}
+/*无权限中心*/
+
+.data-icon-noselect-unit,
+.data-icon-noselect-unit_ico_open,
+.data-icon-noselect-unit_ico_close,
+.data-icon-noselect-unit_ico_docu {
+    background-position: -404px -124px;
+}
+/**编码配置,基本信息**/
+
+.data-icon-encode-base,
+.data-icon-encode-base_ico_open,
+.data-icon-encode-base_ico_close,
+.data-icon-encode-base_ico_docu {
+    background-position: -432px -124px;
+}
+/**编码配置,网络参数**/
+
+.data-icon-encode-net,
+.data-icon-encode-net_ico_open,
+.data-icon-encode-net_ico_close,
+.data-icon-encode-net_ico_docu {
+    background-position: -460px -124px;
+}
+/**编码配置,DDNS设置**/
+
+.data-icon-encode-ddns,
+.data-icon-encode-ddns_ico_open,
+.data-icon-encode-ddns_ico_close,
+.data-icon-encode-ddns_ico_docu {
+    background-position: -488px -124px;
+}
+/**编码配置,PPPOE设置**/
+
+.data-icon-encode-pppoe,
+.data-icon-encode-pppoe_ico_open,
+.data-icon-encode-pppoe_ico_close,
+.data-icon-encode-pppoe_ico_docu {
+    background-position: -516px -124px;
+}
+/**编码配置,IO报警**/
+
+.data-icon-encode-io-alarm,
+.data-icon-encode-io-alarm_ico_open,
+.data-icon-encode-io-alarm_ico_close,
+.data-icon-encode-io-alarm_ico_docu {
+    background-position: -544px -124px;
+}
+/**编码配置,版本信息**/
+
+.data-icon-encode-version,
+.data-icon-encode-version_ico_open,
+.data-icon-encode-version_ico_close,
+.data-icon-encode-version_ico_docu {
+    background-position: -572px -124px;
+}
+/**编码配置,系统参数**/
+
+.data-icon-ip-channel-config,
+.data-icon-ip-channel-config_ico_open,
+.data-icon-ip-channel-config_ico_close,
+.data-icon-ip-channel-config_ico_docu {
+    background-position: -600px -124px;
+}
+/**编码配置,网域设置**/
+
+.data-icon-netzone-config,
+.data-icon-netzone-config_ico_open,
+.data-icon-netzone-config_ico_close,
+.data-icon-netzone-config_ico_docu {
+    background-position: -12px -152px;
+}
+/**编码配置,短信网关**/
+
+.data-icon-sms-config{
+    background-position: -96px -293px;
+}
+
+/**API第三方接入配置**/
+.data-icon-third-config-para{
+    background-position: -600px -123px;
+}
+
+/**编码配置,系统邮箱**/
+
+.data-icon-mail-config,
+.data-icon-mail-config_ico_open,
+.data-icon-mail-config_ico_close,
+.data-icon-mail-config_ico_docu {
+    background-position: -40px -152px;
+}
+
+/**有录像计划的监控点**/
+
+.data-icon-record-point,
+.data-icon-record-point_ico_open,
+.data-icon-record-point_ico_close,
+.data-icon-record-point_ico_docu {
+    background-position: -68px -152px;
+}
+/**无录像计划的监控点**/
+
+.data-icon-norecord-point,
+.data-icon-norecord-point_ico_open,
+.data-icon-norecord-point_ico_close,
+.data-icon-norecord-point_ico_docu {
+    background-position: -96px -152px;
+}
+/**报警联动**/
+
+.data-icon-alarm-linkage,
+.data-icon-alarm-linkage_ico_open,
+.data-icon-alarm-linkage_ico_close,
+.data-icon-alarm-linkage_ico_docu {
+    background-position: -124px -152px;
+}
+/**链接**/
+
+.data-icon-linkage,
+.data-icon-linkage_ico_open,
+.data-icon-linkage_ico_close,
+.data-icon-linkage_ico_docu {
+    background-position: -152px -152px;
+}
+/**标记图标**/
+
+.data-icon-sign,
+.data-icon-sign_ico_open,
+.data-icon-sign_ico_close,
+.data-icon-sign_ico_docu {
+    background-position: -180px -152px;
+}
+/*控制中心*/
+
+.data-icon-region,
+.data-icon-region_ico_open,
+.data-icon-region_ico_close,
+.data-icon-region_ico_docu {
+    background-position: -152px -12px;
+}
+/*电视墙*/
+
+.data-icon-tvwall {
+    background-position: -180px -12px;
+}
+/*批量导入*/
+
+.data-icon-loadin {
+    background-position: -208px -12px;
+}
+/*批量导出*/
+
+.data-icon-loadout {
+    background-position: -236px -12px;
+}
+/*区域元素移动*/
+
+.data-icon-move {
+    background-position: -264px -12px;
+}
+/*批量开卡*/
+
+.data-icon-batchcardopen {
+    background-position: -292px -12px;
+}
+/*批量退卡*/
+
+.data-icon-batchcardclose {
+    background-position: -320px -12px;
+}
+/*空白卡*/
+
+.data-icon-blankcard {
+    background-position: -348px -12px;
+}
+/*正常卡*/
+
+.data-icon-normalcard,
+.data-icon-normalcard_ico_open,
+.data-icon-normalcard_ico_close,
+.data-icon-normalcard_ico_docu {
+    background-position: -376px -12px;
+}
+/*挂失卡*/
+
+.data-icon-losscard {
+    background-position: -404px -12px;
+}
+/*黑名单卡*/
+
+.data-icon-blackcard {
+    background-position: -432px -12px;
+}
+/*门参数*/
+
+.data-icon-doorparam {
+    background-position: -460px -12px;
+}
+/*门组*/
+
+.data-icon-doorgroup,
+.data-icon-doorgroup_ico_open,
+.data-icon-doorgroup_ico_close,
+.data-icon-doorgroup_ico_docu {
+    background-position: -488px -12px;
+}
+/*计划模版*/
+
+.data-icon-template {
+    background-position: -516px -12px;
+}
+/*人员授权*/
+
+.data-icon-personau {
+    background-position: -544px -12px;
+}
+/*部门授权*/
+
+.data-icon-doorau {
+    background-position: -572px -12px;
+}
+/*权限下载*/
+
+.data-icon-audownload {
+    background-position: -600px -12px;
+}
+
+/*控制中心*/
+.data-icon-unit,
+.data-icon-unit_ico_open,
+.data-icon-unit_ico_close,
+.data-icon-unit_ico_docu {
+    background-position: -124px -40px;
+}
+
+/* 区域（级联） */
+.data-icon-region-cascade,
+.data-icon-region-cascade_ico_open,
+.data-icon-region-cascade_ico_close,
+.data-icon-region-cascade_ico_docu {
+    background-position: -320px -322px;
+}
+
+/* 组织（级联） */
+.data-icon-unit-cascade,
+.data-icon-unit-cascade_ico_open,
+.data-icon-unit-cascade_ico_close,
+.data-icon-unit-cascade_ico_docu {
+    background-position: -375px -323px;
+}
+
+/* 监控点（级联） */
+.data-icon-camera-cascade,
+.data-icon-camera-cascade_ico_open,
+.data-icon-camera-cascade_ico_close,
+.data-icon-camera-cascade_ico_docu {
+    background-position: -403px -322px;
+}
+
+/* 监控点-枪机（级联） */
+.data-icon-camera1-cascade,
+.data-icon-camera1-cascade_ico_open,
+.data-icon-camera1-cascade_ico_close,
+.data-icon-camera1-cascade_ico_docu {
+    background-position: -430px -322px;
+}
+
+/* 监控点-枪机（级联） */
+.data-icon-camera2-cascade,
+.data-icon-camera2-cascade_ico_open,
+.data-icon-camera2-cascade_ico_close,
+.data-icon-camera2-cascade_ico_docu {
+    background-position: -430px -322px;
+}
+
+/* 监控点-球机（级联） */
+.data-icon-camera3-cascade,
+.data-icon-camera3-cascade_ico_open,
+.data-icon-camera3-cascade_ico_close,
+.data-icon-camera3-cascade_ico_docu {
+    background-position: -459px -322px;
+}
+
+/* 监控点-带云镜枪机（级联） */
+.data-icon-camera4-cascade,
+.data-icon-camera4-cascade_ico_open,
+.data-icon-camera4-cascade_ico_close,
+.data-icon-camera4-cascade_ico_docu {
+    background-position: -487px -322px;
+}
+
+/* 2 */
+/*监控点管理*/
+
+.data-icon-cameramanage {
+    background-position: -12px -40px;
+}
+/*录像管理*/
+
+.data-icon-recordmanage {
+    background-position: -40px -40px;
+}
+/*智能管理*/
+
+.data-icon-imanage {
+    background-position: -68px -40px;
+}
+/*远程配置、智能配置*/
+
+.data-icon-config {
+    background-position: -96px -40px;
+}
+/*监控点-基本信息*/
+
+.data-icon-basicinfo {
+    background-position: -124px -40px;
+}
+/*监控点-显示配置*/
+
+.data-icon-displayconfig {
+    background-position: -152px -40px;
+}
+/*监控点-视频参数*/
+
+.data-icon-videoparam {
+    background-position: -180px -40px;
+}
+/*监控点-rs485*/
+
+.data-icon-rs485 {
+    background-position: -208px -40px;
+}
+
+.data-icon-video-keep-out {
+    background-position: -236px -40px;
+}
+
+.data-icon-video-lose {
+    background-position: -264px -40px;
+}
+
+.data-icon-video-keep-out-alarm {
+    background-position: -292px -40px;
+}
+
+/* 停车场 */
+.data-icon-pms-driveway,
+.data-icon-pms-driveway_ico_open,
+.data-icon-pms-driveway_ico_close,
+.data-icon-pms-driveway_ico_docu{
+    background-position: -292px -322px;
+}
+
+/*日期、时段*/
+
+.data-icon-calendar {
+    background-position: -320px -40px;
+}
+
+.data-icon-213 {
+    background-position: -348px -40px;
+}
+
+.data-icon-214 {
+    background-position: -376px -40px;
+}
+
+.data-icon-215 {
+    background-position: -404px -40px;
+}
+
+.data-icon-216 {
+    background-position: -432px -40px;
+}
+
+.data-icon-217 {
+    background-position: -460px -40px;
+}
+/*权限复制*/
+
+.data-icon-copy {
+    background-position: -488px -40px;
+}
+/*权限下载*/
+
+.data-icon-download {
+    background-position: -516px -40px;
+}
+
+.data-icon-220 {
+    background-position: -544px -40px;
+}
+
+.data-icon-221 {
+    background-position: -572px -40px;
+}
+/* 3 */
+/*首页*/
+
+.data-icon-home {
+    background-position: -12px -68px;
+}
+/*关闭叉*/
+
+.data-icon-close {
+    background-position: -40px -68px;
+}
+/*关闭叉-选中*/
+
+.data-icon-closeactive {
+    background-position: -68px -68px;
+}
+/*编码器*/
+
+.data-icon-encode,
+.data-icon-encode_ico_open,
+.data-icon-encode_ico_close,
+.data-icon-encode_ico_docu {
+    background-position: -96px -68px;
+}
+/*监控点*/
+
+.data-icon-camera,
+.data-icon-camera_ico_open,
+.data-icon-camera_ico_close,
+.data-icon-camera_ico_docu {
+    background-position: -124px -68px;
+}
+/*设备IO*/
+
+.data-icon-io,
+.data-icon-io_ico_open,
+.data-icon-io_ico_close,
+.data-icon-io_ico_docu {
+    background-position: -152px -68px;
+}
+/*报警主机*/
+
+.data-icon-alarm,
+.data-icon-alarm_ico_open,
+.data-icon-alarm_ico_close,
+.data-icon-alarm_ico_docu {
+    background-position: -180px -68px;
+}
+/*报警防区*/
+
+.data-icon-alarmarea,
+.data-icon-alarmarea_ico_open,
+.data-icon-alarmarea_ico_close,
+.data-icon-alarmarea_ico_docu {
+    background-position: -208px -68px;
+}
+/*门禁控制器*/
+
+.data-icon-ac,
+.data-icon-ac_ico_open,
+.data-icon-ac_ico_close,
+.data-icon-ac_ico_docu {
+    background-position: -236px -68px;
+}
+/*门禁读卡器*/
+
+.data-icon-reader,
+.data-icon-reader_ico_open,
+.data-icon-reader_ico_close,
+.data-icon-reader_ico_docu {
+    background-position: -264px -68px;
+}
+/*部门*/
+
+.data-icon-dept,
+.data-icon-dept_ico_open,
+.data-icon-dept_ico_close,
+.data-icon-dept_ico_docu {
+    background-position: -292px -68px;
+}
+/*部门（无权限）*/
+
+.data-icon-nopri-dept,
+.data-icon-nopri-dept_ico_open,
+.data-icon-nopri-dept_ico_close,
+.data-icon-nopri-dept_ico_docu {
+    background-position: -292px -68px;
+}
+/*报警日志*/
+
+.data-icon-logalarm {
+    background-position: -320px -68px;
+}
+/*异常报表*/
+
+.data-icon-exception-reporting {
+    background-position: -348px -96px;
+}
+/*服务器报表*/
+
+.data-icon-server-reporting {
+    background-position: -376px -96px;
+}
+/*设备报表*/
+
+.data-icon-device-reporting {
+    background-position: -404px -96px;
+}
+/*用户报表*/
+
+.data-icon-user-reporting {
+    background-position: -432px -96px;
+}
+/*刷新按钮*/
+
+.data-icon-refresh {
+    background-position: -460px -96px;
+}
+/*远程重启按钮*/
+
+.data-icon-reboot {
+    background-position: -488px -96px;
+}
+/*显示按钮*/
+
+.data-icon-show {
+    background-position: -516px -96px;
+}
+/*正常*/
+
+.data-icon-normal {
+    background-position: -544px -96px;
+}
+/*异常*/
+
+.data-icon-exception {
+    background-position: -572px -96px;
+}
+/*离线*/
+
+.data-icon-unline {
+    background-position: -600px -96px;
+}
+
+.data-icon-device-online {
+    background-position: -12px -124px;
+}
+
+.data-icon-device-unline {
+    background-position: -40px -124px;
+}
+/*事件*/
+
+.data-icon-logevent {
+    background-position: -348px -68px;
+}
+/*配置参数*/
+
+.data-icon-logconfig {
+    background-position: -376px -68px;
+}
+/*控制日志*/
+
+.data-icon-logcontrol {
+    background-position: -404px -68px;
+}
+/*设备日志*/
+
+.data-icon-logdevice {
+    background-position: -432px -68px;
+}
+/*工作记录*/
+
+.data-icon-logwork {
+    background-position: -460px -68px;
+}
+/*统计*/
+
+.data-icon-statistics {
+    background-position: -488px -68px;
+}
+
+.data-icon-319 {
+    background-position: -516px -68px;
+}
+
+.data-icon-320 {
+    background-position: -544px -68px;
+}
+
+.data-icon-role {
+    background-position: -572px -68px;
+}
+/*用户管理-部门*/
+
+.data-icon-userdept {
+    background-position: -600px -68px;
+}
+/*用户管理-用户*/
+
+.data-icon-user,
+.data-icon-user_ico_open,
+.data-icon-user_ico_close,
+.data-icon-user_ico_docu {
+    background-position: -12px -96px;
+}
+/*权限-视频*/
+
+.data-icon-rvideo {
+    background-position: -40px -96px;
+}
+/*权限-门禁*/
+
+.data-icon-rac,
+.data-icon-rac_ico_open,
+.data-icon-rac_ico_close,
+.data-icon-rac_ico_docu {
+    background-position: -68px -96px;
+}
+/*权限-停车场*/
+
+.data-icon-rpark {
+    background-position: -96px -96px;
+}
+
+.data-icon-405 {
+    background-position: -124px -96px;
+}
+
+.data-icon-rde {
+    background-position: -152px -96px;
+}
+/*一卡通-人员*/
+
+.data-icon-personoc {
+    background-position: -180px -96px;
+}
+
+.data-icon-408 {
+    background-position: -208px -96px;
+}
+/*常开时段*/
+
+.data-icon-opentime {
+    background-position: -236px -96px;
+}
+/*常开时段下载*/
+
+.data-icon-opentime-download {
+    background-position: -264px -96px;
+}
+/*移动侦测报警*/
+
+.data-icon-motion-detection-alarm {
+    background-position: -292px -96px;
+}
+/*返回*/
+
+.data-icon-goback {
+    background-position: -320px -96px;
+}
+/*指纹提示*/
+
+.data-icon-finger-tip {
+    background-position: -572px -152px;
+}
+/*指纹注册*/
+
+.data-icon-finger-edit {
+    background-position: -600px -152px;
+}
+/*指纹删除*/
+
+.data-icon-finger-del {
+    background-position: -12px -180px;
+}
+/*指纹全部删除*/
+
+.data-icon-finger-clear {
+    background-position: -40px -180px;
+}
+/*指纹选中*/
+
+.data-icon-finger-ck-checked {
+    background-position: -96px -180px;
+}
+/*指纹未选中*/
+
+.data-icon-finger-ck-unchecked {
+    background-position: -68px -180px;
+}
+/*****访客部分*****/
+
+.data-icon-rvs-order {
+    background-position: -152px -180px;
+}
+
+.data-icon-rvs-register {
+    background-position: -180px -180px;
+}
+
+.data-icon-rvs-visitor-query {
+    background-position: -208px -180px;
+}
+
+.data-icon-rvs-card-query {
+    background-position: -236px -180px;
+}
+/*****回放录像图标******/
+
+.data-icon-cvr,
+.data-icon-cvr_ico_open,
+.data-icon-cvr_ico_close,
+.data-icon-cvr_ico_docu {
+    background-position: -264px -152px;
+}
+
+.data-icon-pcnvr,
+.data-icon-pcnvr_ico_open,
+.data-icon-pcnvr_ico_close,
+.data-icon-pcnvr_ico_docu {
+    background-position: -292px -152px;
+}
+
+.data-icon-device,
+.data-icon-device_ico_open,
+.data-icon-device_ico_close,
+.data-icon-device_ico_docu {
+    background-position: -320px -152px;
+}
+
+.data-icon-nvr,
+.data-icon-nvr_ico_open,
+.data-icon-nvr_ico_close,
+.data-icon-nvr_ico_docu {
+    background-position: -348px -152px;
+}
+
+.data-icon-ipsn,
+.data-icon-ipsn_ico_open,
+.data-icon-ipsn_ico_close,
+.data-icon-ipsn_ico_docu {
+    background-position: -376px -152px;
+}
+
+.data-icon-parking,
+.data-icon-parking_ico_open,
+.data-icon-parking_ico_close,
+.data-icon-parking_ico_docu {
+    background-position: -262px -322px;
+}
+
+.data-icon-camera1,
+.data-icon-camera1_ico_open,
+.data-icon-camera1_ico_close,
+.data-icon-camera1_ico_docu {
+    background-position: -404px -152px;
+}
+
+.data-icon-camera2,
+.data-icon-camera2_ico_open,
+.data-icon-camera2_ico_close,
+.data-icon-camera2_ico_docu {
+    background-position: -432px -152px;
+}
+
+.data-icon-camera3,
+.data-icon-camera3_ico_open,
+.data-icon-camera3_ico_close,
+.data-icon-camera3_ico_docu {
+    background-position: -460px -152px;
+}
+
+.data-icon-camera4,
+.data-icon-camera4_ico_open,
+.data-icon-camera4_ico_close,
+.data-icon-camera4_ico_docu {
+    background-position: -488px -152px;
+}
+
+.data-icon-read-door-parameter,
+.data-icon-read-door-parameter_ico_open,
+.data-icon-read-door-parameter_ico_close,
+.data-icon-read-door-parameter_ico_docu {
+    background-position: -516px -152px;
+}
+/*add by lqh*/
+/*楼层分组*/
+
+.data-icon-floor-grouping,
+.data-icon-floor-grouping_ico_docu {
+    background-position: -292px -180px;
+}
+/*计划模版*/
+
+.data-icon-schedule-template {
+    background-position: -320px -180px;
+}
+/*免刷卡时段*/
+
+.data-icon-free-card-period {
+    background-position: -348px -180px;
+}
+/*人员访问权限*/
+
+.data-icon-personnel-access {
+    background-position: -376px -180px;
+}
+/*楼层访问权限*/
+
+.data-icon-floor-access {
+    background-position: -404px -180px;
+}
+/*梯控事件查询*/
+
+.data-icon-ecs-event-query {
+    background-position: -432px -180px;
+}
+/*消费设备管理*/
+
+.data-icon-ccs-device-management {
+    background-position: -460px -180px;
+}
+/*营业商户管理*/
+
+.data-icon-business-management {
+    background-position: -488px -180px;
+}
+/*消费项目管理*/
+
+.data-icon-ccs-project-management {
+    background-position: -516px -180px;
+}
+/*营业时段*/
+
+.data-icon-business-hours {
+    background-position: -544px -180px;
+}
+/*消费授权*/
+
+.data-icon-ccs-license {
+    background-position: -572px -180px;
+}
+/*账户管理*/
+
+.data-icon-account-management {
+    background-position: -600px -180px;
+}
+/*消费参数设置*/
+
+.data-icon-ccs-parameter-settings {
+    background-position: -12px -208px;
+}
+/*日志查询*/
+
+.data-icon-log-query {
+    background-position: -40px -208px;
+}
+/*统计报表*/
+
+.data-icon-numerical-statement {
+    background-position: -68px -208px;
+}
+/*巡查路线*/
+
+.data-icon-ops-route {
+    background-position: -96px -208px;
+}
+/*假日配置*/
+
+.data-icon-holiday-configue {
+    background-position: -124px -208px;
+}
+/*打印*/
+
+.data-icon-print {
+    background-position: -152px -208px;
+}
+/*巡查计划*/
+
+.data-icon-ops-plan {
+    background-position: -180px -208px;
+}
+/*巡查路线历史记录*/
+
+.data-icon-ops-route-history {
+    background-position: -208px -208px;
+}
+/*巡查点历史记录*/
+
+.data-icon-ops-spot-history {
+    background-position: -236px -208px;
+}
+/*排班信息查询*/
+
+.data-icon-schedule-info-query {
+    background-position: -264px -208px;
+}
+/*上移*/
+
+.data-icon-move-up {
+    background-position: -292px -208px;
+}
+/*下移*/
+
+.data-icon-move-down {
+    background-position: -320px -208px;
+}
+/*导出本页*/
+
+.data-icon-export-this-page {
+    background-position: -348px -208px;
+}
+/*导出所有*/
+
+.data-icon-export-all {
+    background-position: -376px -208px;
+}
+/*时间设置*/
+
+.data-icon-time-settings {
+    background-position: -404px -208px;
+}
+/*图片联动*/
+
+.data-icon-picture-linkage {
+    background-position: -432px -208px;
+}
+/*录像联动*/
+
+.data-icon-video-linkage {
+    background-position: -460px -208px;
+}
+/*归还设备*/
+
+.data-icon-return-device {
+    background-position: -488px -208px;
+}
+/*删除设备*/
+
+.data-icon-deleter-device {
+    background-position: -516px -208px;
+}
+/*发放设备*/
+
+.data-icon-issuing-device {
+    background-position: -544px -208px;
+}
+/*漏巡*/
+
+.data-icon-ops-miss {
+    background-position: -572px -208px;
+}
+/*班组管理*/
+
+.data-icon-team-management {
+    background-position: -12px -236px;
+}
+/*班次管理*/
+
+.data-icon-shift-management {
+    background-position: -40px -236px;
+}
+/*考勤点管理*/
+
+.data-icon-att-spot-management {
+    background-position: -68px -236px;
+}
+/*考勤调整管理*/
+
+.data-icon-att-adjustment-management {
+    background-position: -96px -236px;
+}
+/*撤销操作*/
+
+.data-icon-undo {
+    background-position: -124px -236px;
+}
+/*下层设备侦测*/
+
+.data-icon-lower-equipment-detection {
+    background-position: -152px -236px;
+}
+/*身份管理*/
+
+.data-icon-identity-management {
+    background-position: -180px -236px;
+}
+/*临时卡*/
+
+.data-icon-temporary-card {
+    background-position: -208px -236px;
+}
+/*消费参数下载*/
+
+.data-icon-ccs-parameters-download {
+    background-position: -236px -236px;
+}
+/*数据库管理*/
+
+.data-icon-database-management {
+    background-position: -264px -236px;
+}
+/*数据库还原*/
+
+.data-icon-database-restore {
+    background-position: -292px -236px;
+}
+/*数据库备份*/
+
+.data-icon-database-backup {
+    background-position: -320px -236px;
+}
+/*查询*/
+
+.data-icon-query {
+    background-position: -348px -236px;
+}
+/*梯控授权*/
+
+.data-icon-ecs-license {
+    background-position: -376px -236px;
+}
+/*下载中心-灰色*/
+
+.data-icon-download1 {
+    background-position: -404px -236px;
+}
+/*下载中心-绿色*/
+
+.data-icon-download {
+    background-position: -432px -236px;
+}
+/*MCU-绿色*/
+
+.data-icon-mcu,
+.data-icon-mcu_ico_docu {
+    background-position: -488px -236px;
+}
+/*批量开启*/
+
+.data-icon-ecs-batch-open {
+    background-position: -544px -236px;
+}
+/*批量关闭*/
+
+.data-icon-ecs-batch-close {
+    background-position: -572px -236px;
+}
+/*可用状态*/
+
+.data-icon-available {
+    background-position: -600px -236px;
+}
+/*Logo自定义*/
+
+.data-icon-custom-logo {
+    background-position: -12px -264px;
+}
+/*第三方链接*/
+
+.data-icon-third-party-links {
+    background-position: -40px -264px;
+}
+/*出入口*/
+
+.data-icon-pcs-entrance,
+.data-icon-pcs-entrance_ico_open,
+.data-icon-pcs-entrance_ico_close,
+.data-icon-pcs-entrance_ico_docu {
+    background-position: -68px -264px;
+}
+/*管控区域*/
+
+.data-icon-pcs-controlRegion,
+.data-icon-pcs-controlRegion_ico_open,
+.data-icon-pcs-controlRegion_ico_close,
+.data-icon-pcs-controlRegion_ico_docu {
+    background-position: -96px -264px;
+}
+/*报警配置*/
+
+.data-icon-pcs-alarmConfig {
+    background-position: -124px -264px;
+}
+/*人员管控参数*/
+
+.data-icon-pcs-paramConfig {
+    background-position: -152px -264px;
+}
+/*访客权限组*/
+
+.data-icon-auth-group {
+    background-position: -180px -264px;
+}
+/*巡查点*/
+/*.data-icon-ops-point {
+  background-position:-208px -264px;
+}*/
+/*正确*/
+
+.data-icon-success {
+    background-position: -236px -264px;
+}
+/*错误*/
+
+.data-icon-error {
+    background-position: -264px -264px;
+}
+/*巡查点*/
+
+.data-icon-ops-point,
+.data-icon-ops-point_ico_open,
+.data-icon-ops-point_ico_close,
+.data-icon-ops-point_ico_docu {
+    background-position: -292px -264px;
+}
+/*空间热度图*/
+
+.data-icon-space-heat-map {
+    background-position: -348px -264px;
+}
+/*时间热度图*/
+
+.data-icon-time-heat-map {
+    background-position: -376px -264px;
+}
+/*时间热度图*/
+
+.data-icon-import-photo {
+    background-position: -404px -264px;
+}
+/*写卡*/
+
+.data-icon-write-card {
+    background-position: -432px -264px;
+}
+/*区域*/
+
+.data-icon-closedArea,
+.data-icon-closedArea_ico_open,
+.data-icon-closedArea_ico_close,
+.data-icon-closedArea_ico_docu {
+    background-position: -460px -264px;
+}
+/*发送对象*/
+
+.data-icon-send-object {
+    background-position: -152px -292px;
+}
+/*查看图片*/
+
+.data-icon-jpg {
+    background-position: -180px -292px;
+}
+/*视频参数*/
+
+.data-icon-video-param {
+    background-position: -292px -292px;
+}
+/*批量配置*/
+
+.data-icon-batch-config {
+    background-position: -320px -292px;
+}
+/*收缩*/
+
+.data-icon-search {
+    background-position: -320px -264px;
+}
+/*管理机视频权限*/
+.data-icon-manager-accord {
+    background-position: -462px -292px;
+    height: 18px;
+}
+/*室内机视频权限*/
+.data-icon-indoor-accord {
+    /*background-position: -432px -291px;*/
+    background-position: -518px -321px;
+    height: 18px;
+}
+/*门禁访问权限*/
+.data-icon-acs-accord {
+    background-position: -489px -293px;
+}
+/*新建信息*/
+.data-icon-new-mail {
+    width: 20px;
+    background-position: -516px -292px;
+}
+/*发件箱*/
+.data-icon-send-box {
+    width: 20px;
+    background-position: -543px -292px;
+}
+/*已发送*/
+.data-icon-sended {
+    width: 20px;
+    background-position: -571px -292px;
+}
+/*对讲日志*/
+.data-icon-talk-log {
+    background-position: -603px -292px;
+}
+/*事件日志*/
+.data-icon-event-log {
+    background-position: -12px -322px;
+}
+
+[class^="data-iconserver-"],
+[class*=" data-iconserver-"] {
+    display: inline-block;
+    width: 44px;
+    height: 40px;
+    background-image: url("images/icon2.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.data-iconserver-ams {
+    background-position: -12px -32px;
+}
+
+.data-iconserver-pag {
+    background-position: -68px -32px;
+}
+/*门禁接入服务器*/
+
+.data-iconserver-ascdag {
+    background-position: -124px -32px;
+}
+/*通用接入服务器*/
+
+.data-iconserver-ias {
+    background-position: -180px -32px;
+}
+
+.data-iconserver-kps {
+    background-position: -236px -32px;
+}
+
+.data-iconserver-nms {
+    background-position: -292px -32px;
+}
+
+.data-iconserver-sms {
+    background-position: -348px -32px;
+}
+
+.data-iconserver-vrm {
+    background-position: -404px -32px;
+}
+
+.data-iconserver-nvr {
+    background-position: -460px -32px;
+}
+
+.data-iconserver-pcnvr {
+    background-position: -516px -32px;
+}
+
+.data-iconserver-cvr {
+    background-position: -572px -32px;
+}
+
+.data-iconserver-vms {
+    background-position: -628px -32px;
+}
+
+.data-iconserver-mag {
+    background-position: -684px -32px;
+}
+
+.data-iconserver-pss {
+    background-position: -740px -32px;
+}
+
+.data-iconserver-new {
+    background-position: -852px -32px;
+}
+/*行业服务器*/
+
+.data-iconserver-bas {
+    background-position: -913px -32px;
+}
+/*梯控接入服务器*/
+
+.data-iconserver-ecs {
+    background-position: -969px -32px;
+}
+/*消费接入服务器*/
+
+.data-iconserver-ccs {
+    background-position: -1025px -32px;
+}
+
+[class^="data-icon55-"],
+[class*=" data-icon55-"] {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin: 0 5px 5px;
+    line-height: 55px;
+    vertical-align: text-top;
+    background-image: url("../image/icon3.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+/*.data-icon55-res {
+  background-position: -12px -107px;
+}
+.data-icon55-user {
+  background-position: -79px -107px;
+}
+.data-icon55-video {
+  background-position: -146px -107px;
+}
+.data-icon55-onecard {
+  background-position: -213px -107px;
+}
+.data-icon55-ac {
+  background-position: -280px -107px;
+}
+.data-icon55-park {
+  background-position: -347px -107px;
+}
+.data-icon55-alarm {
+  background-position: -414px -107px;
+}
+.data-icon55-emap {
+  background-position: -481px -107px;
+}
+.data-icon55-nm {
+  background-position: -548px -107px;
+}
+.data-icon55-sysconfig {
+  background-position: -615px -107px;
+}
+.data-icon55-preview {
+  background-position: -682px -107px;
+}
+.data-icon55-playback {
+  background-position: -749px -107px;
+}
+.data-icon55-log {
+  background-position: -816px -107px;
+}
+.data-icon55-localconfig {
+  background-position: -883px -107px;
+}*/
+
+.data-icon55-resource {
+    background-position: -12px -12px;
+}
+
+.data-icon55-user {
+    background-position: -79px -12px;
+}
+
+.data-icon55-alarm {
+    background-position: -146px -12px;
+}
+
+.data-icon55-map {
+    background-position: -213px -12px;
+}
+
+.data-icon55-log {
+    background-position: -280px -12px;
+}
+
+.data-icon55-network {
+    background-position: -347px -12px;
+}
+
+.data-icon55-system-config {
+    background-position: -414px -12px;
+}
+
+.data-icon55-onecard {
+    background-position: -481px -12px;
+}
+
+.data-icon55-accesscontrol {
+    background-position: -548px -12px;
+}
+
+.data-icon55-park {
+    background-position: -615px -12px;
+}
+
+.data-icon55-ccs {
+    background-position: -682px -12px;
+}
+
+.data-icon55-att {
+    background-position: -749px -12px;
+}
+
+.data-icon55-ecs {
+    background-position: -816px -12px;
+}
+
+.data-icon55-ops {
+    background-position: -883px -12px;
+}
+
+.data-icon55-rvs {
+    background-position: -950px -12px;
+}
+
+.data-icon55-preview {
+    background-position: -1017px -12px;
+}
+
+.data-icon55-playback {
+    background-position: -12px -79px;
+}
+
+.data-icon55-video {
+    background-position: -79px -79px;
+}
+/*工地监控*/
+
+.data-icon55-worksiteControl {
+    background-position: -146px -79px;
+}
+/*人员管控*/
+
+.data-icon55-personControl {
+    background-position: -213px -79px;
+}
+/*热度图统计*/
+
+.data-icon55-heat-chart {
+    background-position: -280px -79px;
+}
+/*客流量*/
+
+.data-icon55-intelligent-passenger {
+    background-position: -347px -79px;
+}
+
+[class^="data-icon24-"],
+[class*=" data-icon24-"] {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 6px 6px 0;
+    line-height: 24px;
+    vertical-align: middle;
+    background-image: url("images/icon2.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.data-icon24-two-active {
+    background-position: -10px -190px;
+}
+
+.data-icon24-one-active {
+    background-position: -44px -190px;
+}
+
+.data-icon24-three-active {
+    background-position: -78px -190px;
+}
+
+.data-icon24-three-disabled {
+    background-position: -112px -190px;
+}
+
+.data-icon24-two-disabled {
+    background-position: -146px -190px;
+}
+
+.data-icon24-one-disabled {
+    background-position: -180px -190px;
+}
+
+.data-icon24-three-selected {
+    background-position: -214px -190px;
+}
+
+.data-icon24-two-selected {
+    background-position: -248px -190px;
+}
+
+.data-icon24-one-selected {
+    background-position: -282px -190px;
+}
+
+.data-icon24-four-selected {
+    background-position: -316px -190px;
+}
+
+.data-icon24-five-selected {
+    background-position: -350px -190px;
+}
+
+.data-icon24-four-disabled {
+    background-position: -384px -190px;
+}
+
+.data-icon24-five-disabled {
+    background-position: -418px -190px;
+}
+
+.data-icon24-four-active {
+    background-position: -452px -190px;
+}
+
+.data-icon24-five-active {
+    background-position: -486px -190px;
+}
+
+[class^="data-icon60-"],
+[class*=" data-icon60-"] {
+    display: inline-block;
+    width: 60px;
+    height: 70px;
+    margin: 0;
+    line-height: 70px;
+    vertical-align: middle;
+    background-image: url("images/icon2.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.data-icon60-search {
+    background-position: -10px -235px;
+}
+
+.data-icon60-recharge {
+    background-position: -240px -235px;
+}
+
+.data-icon60-subsidy {
+    background-position: -300px -235px;
+}
+/*宽高为64X64的图标*/
+
+[class^="data-icon64-"],
+[class*=" data-icon64-"] {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    line-height: 64px;
+    vertical-align: middle;
+    background-image: url("images/icon2.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.data-icon64-department {
+    background-position: 0 -469px;
+}
+
+.data-icon64-person {
+    background-position: -89px -469px;
+}
+
+.data-icon64-door-point {
+    background-position: -178px -469px;
+}
+
+.data-icon64-door-group {
+    background-position: -267px -469px;
+}
+
+.data-icon64-device {
+    background-position: -356px -469px;
+}
+/***************成功图标*************/
+
+.data-icon32-success {
+    background-image: url("../image/success.jpg");
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+
+/*
+ * 子系统图标
+ */
+[class^="data-app-"],
+[class*=" data-app-"] {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: text-top;
+    background-image: url("images/icon_app.png") !important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+/* 基础应用 */
+.data-app-base {
+    background-position: -10px -10px;
+}
+
+/* 视频 */
+.data-app-vss {
+    background-position: -90px -10px;
+}
+
+/* 门禁 */
+.data-app-acs {
+    background-position: -170px -10px;
+}
+
+/* 入侵报警 */
+.data-app-ias {
+    background-position: -250px -10px;
+}
+
+/* 停车场 */
+.data-app-pms {
+    background-position: -330px -10px;
+}
+
+/* 可视对讲 */
+.data-app-vis {
+    background-position: -410px -10px;
+}
+
+/* 考勤 */
+.data-app-att {
+    background-position: -490px -10px;
+}
+
+/* 访客 */
+.data-app-rvs {
+    background-position: -570px -10px;
+}
+
+/* 巡查 */
+.data-app-ops {
+    background-position: -650px -10px;
+}
+
+/* 梯控 */
+.data-app-ecs {
+    background-position: -730px -10px;
+}
+
+/* 电子地图 */
+.data-app-ems {
+    background-position: -810px -10px;
+}
+
+/* 事件中心 */
+.data-app-eps {
+    background-position: -890px -10px;
+}
+
+/* 消费 */
+.data-app-ccs {
+    background-position: -1130px -10px;
+}
+
+/* 网络管理 */
+.data-app-coms {
+    background-position: -970px -10px;
+}
+/* 连锁系统 */
+.data-app-rmp {
+    background-position: -1050px -10px;
+}
+.data-base-esmp{
+	background-position: -566px -230px;
+}
+/*导入*/
+.data-base-import{
+	background-position:-176px -98px;
+}
+/*萤石云配置ICON*/
+.ezvizAddress{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: text-top;
+    background-image: url("images/ezvizAddress.png") !important;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+/**********连锁icon***************/
+.data-base-warn{
+    background-position: -18px -258px;
+}
+
+.data-base-rmp{
+    background-position: -75px -284px;
+}
+.data-base-rexit{
+    background-position: -47px -258px;
+}
+
+.data-app-pems{
+ background-position: -1210px -10px;
+}
+
+
+/**动环传感器树节点图标**/
+.data-cms2-icon-env-channel_ico_close,
+.data-cms2-icon-env-channel_ico_open,
+.data-cms2-icon-env-channel_ico_docu {
+    background-position: -384px -72px;
+}
+
+.data-base-emp_pvs{
+    background-position: -102px -284px;
+}
+.data-base-emp_lms{
+    background-position: -128px -284px;
+}
+.data-base-pems{
+    background-position: -179px -284px;
+}
+
+/*物流可视化*/
+.data-app-emp_lms{
+    background-position: -1370px -10px;
+}
+/*生产可视化*/
+.data-app-emp_pvs{
+    background-position: -1450px -10px;
+}
+/*地产*/
+.data-app-esmp{
+    background-position: -1290px -10px;
+}

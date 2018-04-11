@@ -1,0 +1,24 @@
+<div class="main-setting-view">
+    <div class="menu">
+        <ul>
+            <li ng-class="{'active':settingMenu == 1}" ng-click="goSettingMenu(1)">
+                <span class="fa fa-user-plus"></span>
+                <span>用户操作</span>
+                <span class="fa fa-angle-right"></span>
+            </li>
+            <li ng-class="{'active':settingMenu == 2}" ng-click="goSettingMenu(2)">
+                <span class="fa fa-id-card-o"></span>
+                <span>角色管理</span>
+                <span class="fa fa-angle-right"></span>
+            </li>
+            <!-- <li ng-class="{'active':settingMenu == 3}" ng-click="goSettingMenu(3)">
+                <span class="fa fa-pencil-square-o"></span>
+                <span>菜单编辑</span>
+                <span class="fa fa-angle-right"></span>
+            </li> -->
+        </ul>
+    </div>
+    <div class="content" ui-view>
+
+    </div>
+</div>

@@ -8,7 +8,8 @@
 		localStorageService,
 		toastr,
 		Constant,
-		Loading
+		Loading,
+		AreYouSure
 	) {
 		var setDefaultsHeaders = function() {
 			$http.defaults.headers.post = {
@@ -40,7 +41,8 @@
 				.then(function(res) {
 					console.log(url, 'res', res)
 					Loading.close()
-					if (res.data.code === 4) {
+					AreYouSure.close()
+					if (res.data.code === 2) {
 						toastr.warning(res.data.message)
 						$timeout(function() {
 							localStorageService.remove('user')
@@ -54,6 +56,7 @@
 				.catch(function(error) {
 					console.log(url, 'http error:', error)
 					Loading.close()
+					AreYouSure.close()
 					if (handleError) {
 						handleError()
 					} else {
@@ -77,9 +80,47 @@
 					options.pageCurrent
 				return send(options, url)
 			},
+			addNewProject: function(options) {
+				var url = 'api/project/insert'
+				return send(options, url, 'POST')
+			},
+			updateProject: function(options) {
+				var url = 'api/project/update'
+				return send(options, url, 'POST')
+			},
 			getConstructTypeList: function() {
 				var url = 'api/enum/arr/project/constructType'
 				return send({}, url)
+			},
+			getProjectDetail: function(options) {
+				var url = 'api/project/get?id=' + options.projectId
+				return send(options, url)
+			},
+			getProposalList: function(options) {
+				var url =
+					'api/prepare/proposal/find?projectId=' + options.projectId
+				return send(options, url)
+			},
+			getPermissionList: function(options) {
+				var url = 'api/power/role/list?content=' + options.content
+				return send(options, url)
+			},
+			getRoleMenuList: function(options) {
+				var url
+				if (options.parentId) {
+					url =
+						'api/power/findMenu?roleId=' +
+						options.roleId +
+						'&parentId=' +
+						options.parentId
+				} else {
+					url = 'api/power/findMenu?roleId=' + options.roleId
+				}
+				return send(options, url)
+			},
+			getProgressList: function(options) {
+				var url = 'api/progress/find?content=' + options.content
+				return send(options, url)
 			}
 		}
 	}

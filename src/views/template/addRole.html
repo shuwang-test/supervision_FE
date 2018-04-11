@@ -1,0 +1,38 @@
+<div>
+    <div class="title">
+        <span>添加角色</span>
+    </div>
+    <div class="name">
+        <span>角色名称：</span>
+        <input type="text" ng-model="addRoleData.roleName">
+    </div>
+    <div class="menu">
+        <span>
+            菜单权限：
+        </span>
+        <ul class="first-menu">
+            <li ng-repeat="first in firstMenuList">
+                <span class="fa fa-caret-right"></span>
+                <input type="checkbox" ng-model="first.check" ng-click="chooseFirst(first)">
+                <span ng-click="showSecondMenu(first)">{{first.name}}</span>
+                <ul class="second-menu" ng-class="{'show':first.show===true,'special':first.id===2}">
+                    <li ng-repeat="second in first.secondMenuList">
+                        <span class="fa fa-caret-right"></span>
+                        <input type="checkbox" ng-model="second.check" ng-click="chooseSecond(second)">
+                        <span ng-click="showThirdMenu(second)"> {{second.name}}</span>
+                        <ul class="third-menu" ng-class="{'show':second.show === true}">
+                            <li ng-repeat="third in second.thirdMenuList">
+                                <input type="checkbox" ng-model="third.check" ng-click="chooseThird(third)">
+                                <span>{{third.name}}</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="button">
+        <button class="btn primary" ng-click="certainAddRole()">确定</button>
+        <button class="btn primary" ng-click="cancelAddRole()">取消</button>
+    </div>
+</div>

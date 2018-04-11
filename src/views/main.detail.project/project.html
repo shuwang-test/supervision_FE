@@ -1,0 +1,133 @@
+<div class="project-container">
+    <div class="group">
+        <div class="item">
+            <span>项目名称： </span>
+            <span class="text" ng-show="!editing">{{project.name}}</span>
+            <input type="text" ng-model="projectData.name" auto-focus ng-show="editing">
+        </div>
+        <div class="item">
+            <span>项目面积：</span>
+            <span class="text" ng-show="!editing">{{project.size}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.size">
+        </div>
+        <div class="item">
+            <span> 项目用途： </span>
+            <span class="text" ng-show="!editing">{{project.use}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.use">
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <span>设计单位： </span>
+            <span class="text" ng-show="!editing">{{project.designUnit}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.designUnit">
+        </div>
+        <div class="item">
+            <span>勘测单位：</span>
+            <span class="text" ng-show="!editing">{{project.surveyUnit}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.surveyUnit">
+        </div>
+        <div class="item">
+            <span> 施工单位： </span>
+            <span class="text" ng-show="!editing">{{project.constructUnit}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.constructUnit">
+        </div>
+    </div>
+    <div class="group">
+        <div class="item">
+            <span>监管单位： </span>
+            <span class="text" ng-show="!editing">{{project.superviseUnit}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.superviseUnit">
+        </div>
+        <div class="item">
+            <span>业主单位：</span>
+            <span class="text" ng-show="!editing">{{project.ownerUnit}}</span>
+            <input type="text" ng-show="editing" ng-model="projectData.ownerUnit">
+        </div>
+        <div class="item">
+            <span> 竣工时间： </span>
+            <span class="text" ng-show="!editing">{{project.startDate}}</span>
+            <input type="text" class="form-control start-time" uib-datepicker-popup="{{format}}" ng-model="projectData.startDate" is-open="startTime.show"
+                ng-required="true" close-text="关闭" clear-text="清空" current-text="今天" close-text="关闭" placeholder="开始时间" alt-input-formats="altInputFormats"
+                datepicker-options="dateOptions" ng-show="editing" />
+            <button type="button" class="btn btn-default" ng-click="showStartTime()" ng-show="editing">
+                <i class="glyphicon glyphicon-calendar"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="group">
+        <div class="item">
+            <span>
+                摄像头区域：
+            </span>
+            <span ng-show="!editing">
+                {{project.cameraAreaName }}
+            </span>
+            <span ng-show="editing">
+                {{projectData.cameraAreaName}}
+            </span>
+            <span class="fa fa-pencil-square-o" ng-click="chooseCamera()" ng-show="editing" style="cursor: pointer;">
+            </span>
+        </div>
+    </div>
+
+
+    <div class="group">
+        <div class="item">
+            <span>
+                项目效果图：
+            </span>
+            <div class="btn btn-default" ngf-select="uploadEffectPic($files,$invalidFiles)" ngf-pattern="'image/*'" ngf-multiple="true"
+                ng-show="editing">
+                选择图片
+            </div>
+        </div>
+        <div class="item">
+            <span>
+                项目许可证：
+            </span>
+            <div class="btn btn-default" ngf-select="uploadLicence($files,$invalidFiles)" ngf-pattern="'image/*'" ngf-multiple="true"
+                ng-show="editing">
+                选择图片
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <!-- <div class="img-container" ng-show="!editing">
+            <img ng-src="{{effectPic}}" ng-repeat="effectPic in project.effectPicList track by $index" ng-click="showImage($index,1)"
+                class="effect">
+        </div> -->
+        <div class="img-container" ng-show="!editing">
+            <img ng-src="{{project.effectPic}}" ng-click="showImage(0,1)" class="effect">
+        </div>
+        <!-- <div class="img-container" ng-show="!editing">
+            <img ng-src="{{licence}}" ng-repeat="licence in project.licenceList track by $index" ng-click="showImage($index,2)" class="licence">
+        </div> -->
+        <div class="img-container" ng-show="!editing">
+            <img ng-src="{{project.licence}}" ng-click="showImage(0,2)" class="licence">
+        </div>
+        <div class="img-container" ng-show="editing">
+            <div ng-repeat="effectPic in projectData.effectPicList track by $index">
+                <img ngf-src="effectPic">
+                <span class="fa fa-trash-o" ng-click="deleteEffectPic(effectPic)">
+                </span>
+            </div>
+        </div>
+        <div class="img-container" ng-show="editing">
+            <div ng-repeat="licence in projectData.licenceList track by $index">
+                <img ngf-src="licence">
+                <span class="fa fa-trash-o" ng-click="deleteLicence(licence)">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <div class="button-container">
+            <button class="btn btn-primary" ng-click="cancelEdit()" ng-show="editing">取消</button>
+            <button class="btn btn-primary" ng-click="editInfo()" ng-show="!editing">修改</button>
+            <button class="btn btn-primary" ng-click="saveInfo()">保存</button>
+        </div>
+    </div>
+</div>

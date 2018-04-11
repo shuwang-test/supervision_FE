@@ -2,9 +2,42 @@
 @import './mixin.scss';
 @import './height.scss';
 @import './toastr.scss';
+@import './template.scss';
 @import '../views/dialogs/loading/loading.scss';
 @import '../views/dialogs/areYouSure/areYouSure.scss';
 @import '../views/dialogs/addProject/addProject.scss';
+@import '../views/dialogs/addUser/addUser.scss';
+@import '../views/dialogs/chooseArea/chooseArea.scss';
+
 @import '../views/login/login.scss';
 @import '../views/main/main.scss';
-@import '../views/list/list.scss';
+@import '../views/main.list/list.scss';
+
+@import '../views/main.setting/setting.scss';
+@import '../views/main.setting.user/user.scss';
+@import '../views/main.setting.role/role.scss';
+@import '../views/main.setting.menu/menu.scss';
+
+@import '../views/main.detail/detail.scss';
+
+@import '../views/main.detail.project/project.scss';
+
+@import '../views/main.detail.early/early.scss';
+@import '../views/main.detail.early.proposal/proposal.scss';
+@import '../views/main.detail.early.report/report.scss';
+@import '../views/main.detail.early.designPlan/designPlan.scss';
+@import '../views/main.detail.early.constructPlan/constructPlan.scss';
+@import '../views/main.detail.early.planPermission/planPermission.scss';
+@import '../views/main.detail.early.constructPermission/constructPermission.scss';
+
+@import '../views/main.detail.living/living.scss';
+@import '../views/main.detail.living.supervision/supervision.scss';
+@import '../views/main.detail.living.safety/safety.scss';
+@import '../views/main.detail.living.safety.first/first.scss';
+
+@import '../views/main.detail.progress/progress.scss';
+@import '../views/main.detail.progress.planProgress/planProgress.scss';
+@import '../views/main.detail.progress.actualProgress/actualProgress.scss';
+@import '../views/main.detail.progress.compareProgress/compareProgress.scss';
+
+@import '../views/main.detail.audit/audit.scss';

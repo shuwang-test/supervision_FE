@@ -7,6 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>拱墅区发展中心建设工程综合监管平台</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./statics/zTree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <link rel="stylesheet" href="./statics/css/icon.css" type="text/css">
+
+    <script src="./statics/jquery.js"></script>
+    <script src="./statics/zTree/js/jquery.ztree.all-3.5.min.js"></script>
+
+
+
+
+
+
+
     <!-- 引入css库文件 -->
     <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
@@ -16,7 +29,10 @@
     <link rel="stylesheet" href="./lib/css/photoswipe.css">
     <link rel="stylesheet" href="./lib/css/default-skin.css">
     <!-- 引入自定义css -->
+
+    <!-- build:css dist_css/style.css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- endbuild -->
     <!-- 引入js库文件 -->
     <script src="./lib/js/angular.min.js"></script>
     <script src="./lib/js/angular-animate.min.js"></script>
@@ -27,33 +43,141 @@
     <script src="./lib/js/angular-local-storage.min.js"></script>
     <script src="./lib/js/ng-file-upload.min.js"></script>
     <script src="./lib/js/ng-file-upload-shim.min.js"></script>
+    <script src="./lib/js/photoswipe.min.js"></script>
+    <script src="./lib/js/photoswipe-ui-default.min.js"></script>
 
+    <!-- build:js dist_js/bundle.js -->
     <script src="./js/module/app.module.js"></script>
     <script src="./js/config/localStorage.config.js"></script>
     <script src="./js/config/toastr.config.js"></script>
-    <script src="./js/run/app.run.js"></script>
     <script src="./js/config/router.config.js"></script>
+    <script src="./js/run/app.run.js"></script>
+
+
+
+    <script src="./js/filter/trustFilter.js"></script>
+
+    <script src="./js/directive/menuLeft.js"></script>
+    <script src="./js/directive/flagLeft.js"></script>
 
     <script src="./js/service/factory/Constant.js"></script>
     <script src="./js/service/factory/Util.js"></script>
     <script src="./js/service/factory/Http.js"></script>
     <script src="./js/service/factory/Reg.js"></script>
     <script src="./js/service/factory/check.js"></script>
+    <script src="./js/service/factory/PhotoSwipe.js"></script>
+    <script src="./js/service/factory/MenuList.js"></script>
+    <script src="./js/service/factory/Permission.js"></script>
+
+
+    <script src="./js/service/factory/$photoSwipeFactory.js"></script>
+    <script src="./js/service/factory/$utilFactory.js"></script>
+    <script src="./js/service/factory/$httpFactory.js"></script>
+    <script src="./js/service/factory/Http2.js"></script>
+    <script src="./js/service/factory/$handleHttp.js"></script>
+
+
 
     <script src="./js/service/dialog/Loading.js"></script>
     <script src="./js/service/dialog/AreYouSure.js"></script>
     <script src="./js/service/dialog/AddProjectDialog.js"></script>
+    <script src="./js/service/dialog/AddUserDialog.js"></script>
+    <script src="./js/service/dialog/ChooseCameraAreaDialog.js"></script>
 
 
-    <script src="./js/service/model/ProjectList.js"></script>
     <script src="./js/service/model/ConstructTypeList.js"></script>
+    <script src="./js/service/model/ProjectList.js"></script>
+    <script src="./js/service/model/ProjectDetail.js"></script>
+    <script src="./js/service/model/ProposalList.js"></script>
+
+
+
+
 
     <script src="./views/login/loginRoute.js"></script>
     <script src="./views/login/loginCtrl.js"></script>
     <script src="./views/main/mainRoute.js"></script>
     <script src="./views/main/mainCtrl.js"></script>
-    <script src="./views/list/listRoute.js"></script>
-    <script src="./views/list/listCtrl.js"></script>
+
+    <script src="./views/main.list/listRoute.js"></script>
+    <script src="./views/main.list/listCtrl.js"></script>
+
+    <script src="./views/main.setting/settingRoute.js"></script>
+    <script src="./views/main.setting/settingCtrl.js"></script>
+
+    <script src="./views/main.setting.user/userRoute.js"></script>
+    <script src="./views/main.setting.user/userCtrl.js"></script>
+    <script src="./views/main.setting.user/bindProjectCtrl.js"></script>
+
+    <script src="./views/main.setting.role/roleRoute.js"></script>
+    <script src="./views/main.setting.role/roleCtrl.js"></script>
+
+
+
+    <script src="./views/main.detail/detailRoute.js"></script>
+    <script src="./views/main.detail/detailCtrl.js"></script>
+    <script src="./views/main.detail.project/projectRoute.js"></script>
+    <script src="./views/main.detail.project/projectCtrl.js"></script>
+
+    <script src="./views/main.detail.early/earlyRoute.js"></script>
+    <script src="./views/main.detail.early/earlyCtrl.js"></script>
+
+    <script src="./views/main.detail.early.proposal/proposalRoute.js"></script>
+    <script src="./views/main.detail.early.proposal/proposalCtrl.js"></script>
+
+    <script src="./views/main.detail.early.report/reportRoute.js"></script>
+    <script src="./views/main.detail.early.report/reportCtrl.js"></script>
+
+    <script src="./views/main.detail.early.designPlan/designPlanRoute.js"></script>
+    <script src="./views/main.detail.early.designPlan/designPlanCtrl.js"></script>
+
+    <script src="./views/main.detail.early.constructPlan/constructPlanRoute.js"></script>
+    <script src="./views/main.detail.early.constructPlan/constructPlanCtrl.js"></script>
+
+    <script src="./views/main.detail.early.planPermission/planPermissionRoute.js"></script>
+    <script src="./views/main.detail.early.planPermission/planPermissionCtrl.js"></script>
+
+    <script src="./views/main.detail.early.constructPermission/constructPermissionRoute.js"></script>
+    <script src="./views/main.detail.early.constructPermission/constructPermissionCtrl.js"></script>
+
+    <script src="./views/main.detail.living/livingRoute.js"></script>
+    <script src="./views/main.detail.living/livingCtrl.js"></script>
+
+    <script src="./views/main.detail.living.attendance/attendanceRoute.js"></script>
+    <script src="./views/main.detail.living.attendance/attendanceCtrl.js"></script>
+    <script src="./views/main.detail.living.supervision/supervisionRoute.js"></script>
+    <script src="./views/main.detail.living.supervision/supervisionCtrl.js"></script>
+
+
+    <script src="./views/main.detail.living.safety/safetyRoute.js"></script>
+    <script src="./views/main.detail.living.safety/safetyCtrl.js"></script>
+    <script src="./views/main.detail.living.safety.first/firstRoute.js"></script>
+    <script src="./views/main.detail.living.safety.first/firstCtrl.js"></script>
+    <script src="./views/main.detail.living.safety.second/secondRoute.js"></script>
+    <script src="./views/main.detail.living.safety.second/secondCtrl.js"></script>
+    <script src="./views/main.detail.living.safety.third/thirdRoute.js"></script>
+    <script src="./views/main.detail.living.safety.third/thirdCtrl.js"></script>
+    <script src="./views/main.detail.living.safety.fourth/fourthRoute.js"></script>
+    <script src="./views/main.detail.living.safety.fourth/fourthCtrl.js"></script>
+
+
+
+    <script src="./views/main.detail.progress/progressRoute.js"></script>
+    <script src="./views/main.detail.progress/progressCtrl.js"></script>
+    <script src="./views/main.detail.progress.planProgress/planProgressRoute.js"></script>
+    <script src="./views/main.detail.progress.planProgress/planProgressCtrl.js"></script>
+    <script src="./views/main.detail.progress.actualProgress/actualProgressRoute.js"></script>
+    <script src="./views/main.detail.progress.actualProgress/actualProgressCtrl.js"></script>
+    <script src="./views/main.detail.progress.compareProgress/compareProgressRoute.js"></script>
+    <script src="./views/main.detail.progress.compareProgress/compareProgressCtrl.js"></script>
+
+
+    <script src="./views/main.detail.audit/auditRoute.js"></script>
+    <script src="./views/main.detail.audit/auditCtrl.js"></script>
+
+    <!-- <script src="./js/template/templates.js"></script> -->
+
+    <!-- endbuild -->
 
 </head>
 

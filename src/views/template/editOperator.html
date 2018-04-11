@@ -1,0 +1,37 @@
+<div>
+    <div class="title">
+        修改用户信息
+    </div>
+    <div>
+        <span>
+                用户名：
+            </span>
+        <input type="text" ng-model="editOperatorData.realName">
+    </div>
+    <div>
+        <span>
+                    登录名：
+             </span>
+        <input type="text" ng-model="editOperatorData.loginName" disabled>
+    </div>
+    <div>
+        <span>
+                        密码：
+            </span>
+        <input type="password" ng-model="editOperatorData.password">
+    </div>
+    <div>
+        <span>
+                        确认密码：
+            </span>
+        <input type="password" ng-model="editOperatorData.passwordAgain">
+    </div>
+    <div>
+        <span>角色：</span>
+        <select ng-options="role.name for role in roleList" ng-model="editOperatorData.role"></select>
+    </div>
+    <div class="button">
+        <button class="btn primary" ng-click="certainEditOperator()">保存</button>
+        <button class="btn primary" ng-click="cancelEditOperator()">取消</button>
+    </div>
+</div>
